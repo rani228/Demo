@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netmeds Clone</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="v1.css" />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: sans-serif; padding:40px; background:#f7f7f7; }
+    .nav-item {
+      position: relative;
+      display: inline-block;
+      padding: 12px 16px;
+      background:#00acc1;
+      color:#fff;
+      cursor:pointer;
+      user-select:none;
+    }
+    .nav-item a { color:#fff; text-decoration:none; }
+    .beauty-dropdown{
+      display: none;
+      position: absolute;
+      top:100%; left:0;
+      background:#fff;
+      padding:20px;
+      min-width:900px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      border-radius:8px;
+      z-index:1000;
+      /* display:grid; */
+      grid-template-columns:repeat(5,1fr);
+      gap:20px;
+      transition: all 0.3s ease;
+
+    }
+      .beauty-dropdown.active {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 20px;
+}
+    #beautyDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: #000;
+  z-index: 9999;
+  border-radius: 6px;
+  padding: 20px;
+  min-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* display: grid; */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  /* display: none; fix: override grid until .active added */
+}
+
+#beautyDropdown.active {
+  display: grid;
+}
+  .beauty-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+    .beauty-grid .column {
+    flex: 1;
+    min-width: 150px;
+  }
+   .beauty-grid h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+     color: #00acc1;
+  }.beauty-grid li {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+
+  .beauty-grid a {
+    text-decoration: none;
+    color: #333;
+  }
+
+    /* .wellness-dropdown {
+      display: none;
+      position: absolute;
+      top:100%; left:0;
+      background:#fff;
+      padding:20px;
+      min-width:900px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      border-radius:8px;
+      z-index:1000;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:20px;
+    }
+    /* .nav-item:hover .wellness-dropdown {
+      display:grid; */
+    /* } */
+    /* .wellness-dropdown.active {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 20px;
+} */
+
+    .grid-column h4 {
+      margin-bottom:10px;
+      font-size:16px;
+      color:#00acc1;
+    }
+    .grid-column ul {
+      list-style:none;
+      padding:0;
+    }
+    .grid-column li {
+      margin-bottom:6px;
+    }
+    .grid-column a {
+      font-size:14px;
+      color:#333;
+      text-decoration:none;
+    }
+    .grid-column a:hover {
+      color:#00acc1;
+    }
+    /* dropdown wllness  */
+    #wellnessDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: #000;
+  z-index: 9999;
+  border-radius: 6px;
+  padding: 20px;
+  min-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* display: grid; */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  /* display: none; fix: override grid until .active added */
+}
+
+#wellnessDropdown.active {
+  display: grid;
+}
+  .wellness-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+    .wellness-grid .column {
+    flex: 1;
+    min-width: 150px;
+  }
+   .wellness-grid h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+     color: #00acc1;
+  }.wellness-grid li {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+
+  .wellness-grid a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+    .wellness-dropdown {
+      display: none;
+      position: absolute;
+      top:100%; left:0;
+      background:#fff;
+      padding:20px;
+      min-width:900px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      border-radius:8px;
+      z-index:1000;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:20px;
+    } 
+    /* .nav-item:hover .wellness-dropdown {
+      display:grid; */
+    /* } */
+    .wellness-dropdown.active {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 20px;
+}
+.dropdown {
+  display: none;
+  position: absolute; /* or relative as per your layout */
+  background: white;
+  z-index: 1000;
+}
+
+.dropdown.active {
+  display: block;
+}
+
+
+  </style>
+</head>
+<body>
+ 
+    <header class="top-header">
+    <div class="logo">
+        <a href="file no found">
+      <img
+        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1704908302_1704906198_1673595841_1663609483_netmeds-new-logo.svg"
+        alt="Netmeds Logo"
+      /></a>
+    </div>
+
+    <div class="location-search-box">
+      <div class="deliver-box" id="deliverToggle">
+        Deliver to <span id="selectedPin">110002</span> <i class="bi bi-caret-down-fill"></i>
+        <div class="deliver-dropdown" id="deliverDropdown">
+          <h4>Where do you want the delivery?</h4>
+          <p class="desc">Get access to your Addresses, Orders, and Wishlist</p>
+          <button class="sign-in-btn">Sign In to see your location</button>
+          <span class="or-text">Or Enter Pincode</span><br />
+          <span class="desc">Select pincode to see product availability.</span>
+          <div class="pincode-input-wrapper">
+            <img
+              src="https://www.netmeds.com/assets/version1741756829/gloryweb/images/icons/location-on.svg"
+              alt="Location Icon"
+              class="location-icon"
+            />
+            <input
+              type="text"
+              id="manualPincode"
+              maxlength="6"
+              placeholder="   Enter Pincode"
+            />
+          </div>
+          <button class="detect-btn" onclick="detectLocation()">
+            Detect my location
+          </button>
+          <p class="allow-text">Allow to access your location</p>
+          <p id="locationInfo" class="location-info"></p>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search for medicine & wellness product ...."
+          autocomplete="on";
+        />
+        <div class="white-bg" id="noResultBox">
+          <div class="noresult">
+          <img src=" https://www.netmeds.com/assets/version1741756829/gloryweb/images/icons/no_search.png"; alt="image not found">
+              <div id="noResultText" class="no-medicines">Sorry! NO Product Found</div>
+            <span class="empty_text"
+              >we could not find any products related to your search</span>
+             <!-- New input field below -->
+  <div class="search-suggestion">
+   <!-- <input type="" placeholder="" id="searchSuggestion" /> -->
+
+  </div>
+            <div class="autocomplete-footer">
+              <a href="file not found" class="request-btn">Request Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-links">
+      <a href="file not found"><i class="bi bi-cloud-upload"></i> Upload</a>
+      <a href="file not found"><i class="bi bi-tag-fill"></i> Offers</a>
+      <a href="file not found"><i class="bi bi-cart-dash-fill"></i> Cart</a>
+      <a href="file not found"><i class="bi bi-box-arrow-in-right"></i> Sign In</a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul class="nav-items">
+      <li class="nav-item">
+       <img src="https://www.netmeds.com/assets/version1741756829/gloryweb/images/icons/medicine.svg" alt="Medicine" /> Medicine 
+        <ul class="dropdown">
+            <li ><a href="file not found">All Medicines</a></li>
+            <li><a href="file not found">Buy Again</a></li>
+            <li><a href="file not found">Order Online</a></li>
+        </ul>
+      </li>
+<div class="nav-item" id="wellnessToggle">
+   <img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt="" />
+    <a href="javascript:void(0)">Wellness</a>
+    <div class="wellness-dropdown" id="wellnessDropdown">
+      <div class="grid-column">
+        <h4>Ayush</h4>
+        <ul>
+          <li><a href="#">Ayurvedic</a></li>
+          <li><a href="#">Unani</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <hr>
+        
+          <h4>Covid Essentials</h4>
+      <ul>
+        <li><a href="#">Oxygen Can</a></li>
+          <li><a href="#">Personal &Home Essentials</a></li>
+              <li><a href="#"></a></li>
+          </ul>
+          <hr><br>
+           <h4>Devices</h4>
+          <ul>
+        <li><a href="#">Breath Easy</a></li>
+          <li><a href="#">Surgical Accessories</a></li>
+              <li><a href="#"></a></li>
+          </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Diabetes Support</h4>
+        <ul>
+          <li><a href="#">Glucometers</a></li>
+          <li><a href="#">Sugar Substitutes</a></li>
+          <li><a href="#"></a></li>
+        </ul><hr><br>
+          <h4>EyeWear</h4>
+          <ul>
+             <li><a href="#">Eye Glasses</a></li>
+          <li><a href="#">Reading  Glasses</a></li>
+          <li><a href="#"></a></li>
+          </ul>
+          <hr><br>
+          <h4>Fitness</h4>
+          <ul>
+              <li><a href="#">Weight Management</a></li>
+          <li><a href="#">Supports Supplement</a></li>
+          <li><a href="#"></a></li> 
+          </ul>
+
+      </div>
+      <div class="grid-column">
+        <h4>Health Conditions</h4>
+        <ul>
+          <li><a href="#">Womens Care</a></li>
+          <li><a href="#">Bone & join pain</a></li>
+          <li><a href="#"></a></li>
+        </ul><hr><br>
+        <h4>Mom &Baby</h4>
+        <ul>
+                <li><a href="#">Baby Care</a></li>
+          <li><a href="#">feminine & Hygiene</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Personal Care</h4>
+        <ul>
+          <li><a href="#">Home & Health</a></li>
+          <li><a href="#">Senior Care</a></li>
+          <li><a href="#">Face Personal Care</a></li>
+        </ul>
+        <hr><br>
+        <h4>Sexuall Wellness</h4>
+        <ul>
+          <li><a href="#">Condoms</a></li>
+          <li><a href="#">Messagers/vibrators</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Surgical</h4>
+        <ul>
+          <li><a href="#">Respiratory Supplies</a></li>
+          <li><a href="#"></a>Surgical Consumables</li>
+          <li><a href="#">IV Infusion</a></li>
+        </ul>
+        <hr><br>
+        <h4>Veterinary</h4>
+        <ul>
+            <li><a href="#">petcare</a></li>
+          <li><a href="#"></a>Farm Animals</li>
+          <li><a href="#"></a></li>
+        </ul>
+        <hr><br>
+        <h4>Stores</h4>
+        <ul>
+           <li><a href="#">Vitamin Store</a></li>
+          <li><a href="#"></a>Derma Cosmetics</li>
+        </ul>
+        <hr><br>
+        <h4>Trending</h4><ul>
+            <li><a href="#">CeraVe</a></li>
+          <li><a href="#"></a>Cetaphill</li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      <!-- <li class="nav-item">
+           <img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt="Wellness" />Wellness
+        <ul class="dropdown">
+          <div class="grid-column">
+        <h4>Skin Care</h4>
+        <ul>
+          <li><a href="#">Face Wash</a></li>
+          <li><a href="#">Sunscreen</a></li>
+          <li><a href="#">Moisturizer</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Hair Care</h4>
+        <ul>
+          <li><a href="#">Shampoo</a></li>
+          <li><a href="#">Hair Oil</a></li>
+          <li><a href="#">Serum</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Nutrition</h4>
+        <ul>
+          <li><a href="#">Vitamins</a></li>
+          <li><a href="#">Supplements</a></li>
+          <li><a href="#">Health Drinks</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+              <!-- <h4>Ayush</h4>
+           <li><a href="#">Ayurvedic</a></li>
+           <li><a href="#">Unani</a></li>
+            <hr />
+            <h4>Covid Essentials</h4>
+            <li><a href="#">Oxygen Can</a></li>
+            <li><a href="#">Personal & Home Essentials</a></li>
+            <hr />
+            <h4>Devices</h4>
+            <li><a href="#">Breathe Easy</a></li>
+      </div>
+      </ul>
+      </li>
+      <div class="nav-item">
+    <a href="#">Wellness</a>
+    <div class="wellness-dropdown">
+      <div class="grid-column">
+        <h4>Devices</h4>
+        <ul>
+          <li><a href="#">Thermometers</a></li>
+          <li><a href="#">BP Monitors</a></li>
+          <li><a href="#">Oximeters</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Covid Essentials</h4>
+        <ul>
+          <li><a href="#">Face Masks</a></li>
+          <li><a href="#">Sanitizers</a></li>
+          <li><a href="#">Gloves</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Skin Care</h4>
+        <ul>
+          <li><a href="#">Face Wash</a></li>
+          <li><a href="#">Sunscreen</a></li>
+          <li><a href="#">Moisturizer</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Hair Care</h4>
+        <ul>
+          <li><a href="#">Shampoo</a></li>
+          <li><a href="#">Hair Oil</a></li>
+          <li><a href="#">Serum</a></li>
+        </ul>
+      </div>
+      <div class="grid-column">
+        <h4>Nutrition</h4>
+        <ul>
+          <li><a href="#">Vitamins</a></li>
+          <li><a href="#">Supplements</a></li>
+          <li><a href="#">Health Drinks</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      -->
+    
+      <li class="nav-item">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt="Lab Tests" /><a href="#">Lab Tests</a>
+      </li>
+          <!-- <li class="nav-item">
+        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt="Beauty" /><a href="#">Beauty</a>
+        <ul class="dropdown">
+             <h4>Make-Up</h4>
+           <li ><a href="#">Eyes</a></li>
+           <li><a href="#">Face Makeup</a></li>
+            <hr />
+            <h4>Mom & Baby</h4>
+           <li><a href="#">Baby Bath Time</a></li>
+          <li><a href="#">Baby Care</a></li>
+        </ul>
+      </li> -->
+
+<div class="nav-item" id="beautyToggle">
+  <img src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt="Beauty" />
+  <a href="javascript:void(0)">Beauty</a>
+  
+ <div class="dropdown beauty-dropdown" id="beautyDropdown">
+
+  <div class="grid-column">
+    <h4>Fragrances</h4>
+    <ul>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Unisex</a></li>
+    </ul>
+    <hr>
+    <h4>Hair</h4>
+    <ul>
+      <li><a href="#">Hair Care</a></li>
+      <li><a href="#">Hair Color</a></li>
+    </ul>
+    <hr><br>
+    <h4>Men's Grooming</h4>
+    <ul>
+      <li><a href="#">Beard Care</a></li>
+      <li><a href="#">Shaving</a></li>
+    </ul>
+  </div>
+
+  <div class="grid-column">
+    <h4>Make-Up</h4>
+    <ul>
+      <li><a href="#">Eyes</a></li>
+      <li><a href="#">Face MakeUp</a></li>
+      <li><a href="#">Lips</a></li>
+    </ul>
+    <hr><br>
+    <h4>Mom Baby</h4>
+    <ul>
+      <li><a href="#">Baby Bath Time</a></li>
+      <li><a href="#">Baby Care</a></li>
+    </ul>
+  </div>
+
+  <div class="grid-column">
+    <h4>PersonalCare </h4>
+    <ul>
+      <li><a href="#">Bath & Shower</a></li>
+      <li><a href="#">Accessories</a></li>
+       <li><a href="#">Body Care</a></li>
+         <li><a href="#">Face Personal Care</a></li>
+    </ul>
+    
+  
+  </div>
+
+  <div class="grid-column">
+    <h4>Skin Care</h4>
+    <ul>
+      <li><a href="#">Aromatherapy</a></li>
+      <li><a href="#">Cleansers</a></li>
+          <li><a href="#">Eyes Care</a></li>
+              <li><a href="#">Face Skin Care</a></li>
+                  <li><a href="#">Masks</a></li>
+    </ul>
+    <hr><br>
+    <h4>Tools & Appliances</h4>
+    <ul>
+      <li><a href="#">Face/Skin Tools</a></li>
+      <li><a href="#">Hair styling Tools</a></li>
+          <li><a href="#">Massage Tools</a></li>
+    </ul>
+  </div>
+
+ 
+ 
+  </div>
+</div>
+
+    
+    
+    <!-- Add remaining 5 columns as needed (same as your original structure) -->
+  
+
+  <li class="nav-item">
+           <img src="https://www.netmeds.com/assets/version1741756829/gloryweb/images/icons/health-library.svg" alt="Health Corner" />Health Corner 
+        <ul class="dropdown">
+             <li><a href="#">Health Library</a></li>
+           <li ><a href="#">All About Cancers</a></li>
+           <li ><a href="#">Corona Awareness</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+<script>
+  const deliverToggle = document.getElementById("deliverToggle");
+  const deliverDropdown = document.getElementById("deliverDropdown");
+  const selectedPin = document.getElementById("selectedPin");
+  const manualPincodeInput = document.getElementById("manualPincode");
+  const locationInfo = document.getElementById("locationInfo");
+  const noResultBox = document.getElementById("noResultBox");
+  
+  const searchInput = document.getElementById("searchInput"); // For existing search input field//
+   const noResultText = document.getElementById("noResultText");//
+  const searchSuggestion = document.getElementById("searchSuggestion"); // For the new search suggestion input field
+// const btn = document.getElementById("wellnessToggle");
+  const solapurPincodes = ["413304", "413306", "413310", "413307"];
+
+  // Handle location delivery toggle
+  deliverToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    deliverDropdown.style.display =
+      deliverDropdown.style.display === "block" ? "none" : "block";
+  });
+
+  deliverDropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener("click", () => {
+    deliverDropdown.style.display = "none";
+  });
+
+  // Handle pincode input
+  manualPincodeInput.addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, ""); // Only allow digits
+    const pin = this.value;
+
+    if (solapurPincodes.includes(pin)) {
+      locationInfo.textContent = "Solapur, Maharashtra";
+    } else {
+      locationInfo.textContent = "";
+    }
+
+    if (this.value.length === 6) {
+      selectedPin.textContent = pin;
+      if (solapurPincodes.includes(pin)) {
+        setTimeout(() => {
+          window.open("solapur.html", "_blank");
+        }, 500);
+      } else {
+        deliverDropdown.style.display = "none";
+      }
+    }
+  });
+
+  // Detect location functionality
+  function detectLocation() {
+    selectedPin.textContent = "400001";
+    deliverDropdown.style.display = "none";
+    alert("Location detected as 400001 (demo)");
+  }
+
+  // Handle input in the existing search field
+  searchInput.addEventListener("input", function() {
+         const searchTerm = searchInput.value.trim();
+          if (searchTerm.length > 0) {
+        noResultText.innerHTML = `Could not find any products related to your search: <strong>${searchTerm}</strong>`;
+      } else {
+        noResultText.innerHTML = "Could not find any products related to your search: ";
+  }
+
+  
+    
+
+      const noResultBox= document.getElementById("noResultBox");
+      if (searchTerm.length > 0) {
+        noResultBox.style.display = "block";
+      } else {
+        noResultBox.style.display = "none";
+      }
+    
+    });                                                                                                                                                           
+    const toggleBtn = document.getElementById("wellnessToggle");
+    const dropdown = document.getElementById("wellnessDropdown");
+
+    toggleBtn.addEventListener("click", function (e) {
+       e.stopPropagation();
+      dropdown.classList.toggle("active");
+      // e.stopPropagation(); // prevent closing immediately
+    });
+ 
+    document.addEventListener("click", function (e) {
+      // if (!btn.contains(e.target)&& !dropdown.contains(e.target))
+      if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
+
+     {
+        dropdown.classList.remove("active");
+      }
+    }
+    });
+
+const beautyToggle = document.getElementById("beautyToggle");
+const beautyDropdown = document.getElementById("beautyDropdown");
+
+beautyToggle.addEventListener("click", function (e) {
+  e.stopPropagation();
+  beautyDropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+  if (!beautyToggle.contains(e.target) && !beautyDropdown.contains(e.target)) {
+    beautyDropdown.classList.remove("active");
+  }
+});
+
+ 
+  </script>
+       <!-- //  noResultBox.style.display = "block"script>
+  // ;
+  //   } else {
+//       noResultBox.style.display = "none";
+//     }
+//   }); -->
+
+<!-- < //   // Handle input in the new search suggestion field
+//   searchSuggestion.addEventListener("input", function () {
+//     console.log("User typed in search suggestion:", searchSuggestion.value);
+//     // You can add custom actions here based on user input
+< //   }); --> 
+  
+<br><br><br>
+<img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1753450924_Web_Home_Banner.jpg" alt="file not found"><br><br>
+<img src="https://mercury.akamaized.net/i/22a87786a6113bac1bb1d922f8e8affb_325599_0.jpg" alt="file nor found">
+  
+</body>
+</html>
