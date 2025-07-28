@@ -1,13 +1,9 @@
-
+css
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f7f7;
   color: #333;
 }
- .nav-item a {
-      color: #fff;
-      text-decoration: none;
-    }
 
 /* Top header styles */
 .top-header {
@@ -19,12 +15,10 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .logo img {
   height: 75px;
   margin-left: 63px;
 }
-
 /* Location search box */
 .location-search-box {
   display: flex;
@@ -238,19 +232,6 @@ body {
   user-select: none;
   bottom:50px;
 }
-/* 
-.nav-item {
-  position: relative;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: white;
-} */
-
 .nav-item .dropdown {
   display: none;
   position: absolute;
@@ -294,38 +275,10 @@ body {
   .navbar .nav-items {
     flex-direction: column;
   }
-/* 
-.wellness-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  border-radius: 8px;
-  display: none; /* hover मध्ये display करायचं */
-  /* min-width: 900px;
-  z-index: 1000;
-  grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-} */ */
-
-  /* Wellness grid responsive */
-  /* .wellness-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-  } */
-
-
 
   .dropdown wellness-grid {
     gap: 40px;
   }
- /* .wellness-dropdown.active {
-      display: grid;
-    }
-       */
   .dropdown Beauty-grid {
     gap: 40px;
   }
@@ -335,38 +288,13 @@ body {
   margin-bottom: 10px;
    font-size: 16px;
 }
-  /* .wellness-grid .column {
-    flex: 1;
-    min-width: 150px;
-  } */
-
-  /* .wellness-grid h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-     color: #00acc1;
-  } */
   .grid-column ul {
   list-style: none;
   padding: 0;
-}
-
-
-
-  /* .wellness-grid li {
-    list-style: none;
-    margin-bottom: 8px;
   }
-
-  .wellness-grid a {
-    text-decoration: none;
-    color: #333;
-  } */
    .grid-column li {
       margin-bottom: 6px;
     }
-
-
-
 .grid-column a {
   text-decoration: none;
   color: #333;
@@ -384,5 +312,8 @@ body {
 .nav-item:hover .Beauty-dropdown {
   display: none;
 }
+  .nav-item a {
+      color: #fff;
+      text-decoration: none;
+    }
 }
-
