@@ -8,6 +8,8 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     rel="stylesheet"
   />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
   <link rel="stylesheet" href="v1.css" />
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -182,6 +184,228 @@
 .dropdown.active {
   display: block;
 }
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background:white;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* medicines,wellness box */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-center {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 20px;
+      background-color: #fff;
+      min-width: 470px;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color 0.3s;
+    }
+
+    .box:hover {
+      background-color: #f9f9f9;
+    }
+
+    .box-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .box-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .box img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 1px solid #ddd;
+    }
+
+    .box-text {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .arrow {
+      font-size: 16px;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .box:hover .arrow {
+      color: black;
+    }
+
+    .offer {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 50px;
+    }
+
+    .medicine-offer,
+    .beauty-offer,
+    .wellness-offer {
+      color: #0e8a16;
+    }
+
+
+    /* payment partenars Offers view all */
+
+
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+    }
+
+    .offers-section {
+      background: #fff;
+      padding: 20px;
+      max-width: 1500px;
+      margin: 30px auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .offers-section h4 {
+      margin: 0 0 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d2d2d;
+    }
+
+    .offers-section a.view-all {
+      font-size: 14px;
+      margin-left: 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .offer-card {
+      flex: 0 0 calc(33.333% - 15px);
+      display: flex;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-right: 15px;
+      padding: 10px;
+      cursor: pointer;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.06);
+    }
+
+    .offer-card:last-child {
+      margin-right: 0;
+    }
+
+    .offer-card img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin-right: 12px;
+      border-radius: 6px;
+      background: white;
+      padding: 5px;
+      border: 1px solid #eee;
+    }
+
+    .offer-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #007bff;
+      border: none;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 3px;
+      z-index: 1;
+    }
+
+    .nav-btn.prev {
+      left: 5px;
+    }
+
+    .nav-btn.next {
+      right: 5px;
+    }
+
+    .nav-btn:disabled {
+      background: #aaa;
+      cursor: default;
+    }
+
+    @media (max-width: 768px) {
+      .offer-card {
+        flex: 0 0 80%;
+      }
+    }
+    /*  */
+
+
+
+    
   </style>
 </head>
 <body>
@@ -570,7 +794,249 @@ document.addEventListener("click", function (e) {
      
 <br><br><br>
 <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1753450924_Web_Home_Banner.jpg" alt="file not found"><br><br>
-<img src="https://mercury.akamaized.net/i/22a87786a6113bac1bb1d922f8e8affb_325599_0.jpg" alt="file nor found">
+<!-- <img src="https://mercury.akamaized.net/i/22a87786a6113bac1bb1d922f8e8affb_325599_0.jpg" alt="file nor found"> -->
+ <header>
+  <div id="ayushCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <!-- 5 indicators -->
+      <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="4"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <a href="https://www.netmeds.com/non-prescriptions/ayush/page/717" target="_blank">
+          <img src="https://mercury.akamaized.net/i/22a87786a6113bac1bb1d922f8e8affb_325599_0.jpg" class="d-block w-100" alt="Ayush Wellness Banner">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ayush Wellness on Netmeds</h5>
+          <p>Shop Ayurvedic products</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <a href="https://www.netmeds.com/non-prescriptions/ayush" target="_blank">
+          <img src="https://mercury.akamaized.net/i/bde7d3e52e7737cb6854a535cb086c99_334190_0.jpg" class="d-block w-100" alt="Ayush Logo">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ayush Wellness Brand</h5>
+          <p>Explore certified products</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <a href="https://www.netmeds.com/health-library/post/netmeds-turns-10-celebrate-a-decade-of-wellness-with-these-10-ayurvedic-supplements-at-the-best-pric" target="_blank">
+          <img src="https://mercury.akamaized.net/i/c12dfdb7c4041715bda87bcdb7b38f62_334193_0.jpg" class="d-block w-100" alt="Ayurvedic Supplements">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Top Ayurveda Supplements</h5>
+          <p>Featured by Netmeds health library</p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <a href="https://www.netmeds.com/health-library/post/celebrating-9-years-of-netmeds-checkout-our-wide-range-of-products-and-how-you-can-place-your-order" target="_blank">
+          <img src="https://mercury.akamaized.net/i/6fc7f212ce7c91b620581c19f5ff377b_249606_0.jpg" class="d-block w-100" alt="Netmeds Anniversary Ayurveda">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>9th Anniversary Celebrations</h5>
+          <p>Ayurvedic deals featured in blogs</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#ayushCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ayushCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+  <div class="text-center">
+      <small>Netmeds: India's most trusted online pharmacy</small>
+    </div>
+
+    <!-- Boxes Section -->
+    <div class="box-container">
+
+      <!-- Order Medicine -->
+      <a href="order-medicine.html" target="_blank" class="box">
+        <div class="box-top">
+          <div class="box-left">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt="Medicine">
+            <div class="box-text">Order Medicine</div>
+          </div>
+          <div class="arrow">&gt;</div>
+        </div>
+        <div class="offer medicine-offer">Save Up to 20% Off</div>
+      </a>
+
+      <!-- Beauty -->
+      <a href="beauty.html" target="_blank" class="box">
+        <div class="box-top">
+          <div class="box-left">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="Beauty">
+            <div class="box-text">Beauty</div>
+          </div>
+          <div class="arrow">&gt;</div>
+        </div>
+        <div class="offer beauty-offer">Save Up to 40% Off</div>
+      </a>
+
+      <!-- Wellness -->
+      <a href="wellness.html" target="_blank" class="box">
+        <div class="box-top">
+          <div class="box-left">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt="Wellness">
+            <div class="box-text">Wellness</div>
+          </div>
+          <div class="arrow">&gt;</div>
+        </div>
+        <div class="offer wellness-offer">Save Up to 60% Off</div>
+      </a>
+
+    </div>
+    <div class="offers-section">
+    <h4>Payment Partner Offers <a href="https://www.netmeds.com/partner-offers" class="view-all" target="_blank">View All</a></h4>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/simpl'">
+          <img src="https://www.netmeds.com/images/cms/offers/1682856824_1676964790_paytm.png" alt="Simpl">
+          <p><b><small>Cash back Between ₹10&₹300+Vouchers...</b>Till 31stOctober 2025 get assured paytm,cashback between RS.10&R</small></p>
+        </div>
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/paytm'">
+          <img src="https://www.netmeds.com/images/cms/offers/1740490171_Twidpay__Icon256x256.png" alt="Paytm">
+          <p><b><small>Get assured savings of up to RS 150*+Earn up to 16px rewards*..</b>ALL users get assured savings of max RS.150 on ONLY oneTransaction of</p></small></p>
+        </div>
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/mobikwik'">
+          <img src="https://www.netmeds.com/images/cms/offers/1740490171_Twidpay__Icon256x256.png" alt="MobiKwik">
+          <p><b><small>Get assured savings of up to RS 200*+Earn up to 16px rewards*..</b>NEW users get assured savings of max RS.150 on ONLY oneTransaction of</p></small></p>
+        </div>
+        
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/amex'">
+          <img src="https://www.netmeds.com/images/cms/offers/1696004008_Free_Charge_ico_02.png" alt="Amex">
+           <p><b><small>Get Up to RS 35 free change UPI cashback...</b>Get free charge UPI cashback of up tO RS 35 on a minimum  purchase of A</small></p>
+        </div>
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/axis'">
+          <img src="https://www.netmeds.com/images/cms/offers/1739783795_Mobikwik__Icon256x256.png" alt="Axis">
+           <p><b><small>Flat ₹75 Assured  cashback on your first transaction  via MobiKWI..</b>Get aflat  ₹75 cashback on  your first ever transaction using mobileKeik UPI </small></p>
+        </div>
+        <div class="offer-card" onclick="location.href='https://www.netmeds.com/offers/icici'">
+          <img src="https://www.netmeds.com/images/cms/offers/1739783795_Mobikwik__Icon256x256.png" alt="ICICI">
+        <p><b><small>Get Up to 10% cashback with mobikWIK UPI...</b>Get Up to 10% cashback on a minimum purchase Rs 999% when you </small></p>
+        </div>
+      </div>
+      <button class="nav-btn prev" id="prevBtn" disabled>&lt;</button>
+      <button class="nav-btn next" id="nextBtn">&gt;</button>
+    </div>
+  </div>
+<script>
+  const track = document.getElementById('carouselTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let position = 0;
+    const cardCount = track.children.length;
+    const cardsPerPage = 3;
+    const maxPosition = cardCount - cardsPerPage;
+
+    function updateButtons() {
+      prevBtn.disabled = position === 0;
+      nextBtn.disabled = position >= maxPosition;
+    }
+
+    function slideCarousel() {
+      const cardWidth = track.children[0].offsetWidth + 15; // includes margin
+      track.style.transform = `translateX(-${position * cardWidth}px)`;
+      updateButtons();
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (position > 0) {
+        position--;
+        slideCarousel();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (position < maxPosition) {
+        position++;
+        slideCarousel();
+      }
+    });
+
+    window.addEventListener('resize', slideCarousel);
+    updateButtons();
+
+</script>
   
+
+ <h2>Trending Today</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Images -->
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/bc168e1b91408d89c0f3038d408938ad_330002_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/ea044212f34516db8ce3ff11eb9cb949_330005_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/743230da79d22b8d17578b1db5acf8b9_260263_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/9ba0ae15bd796bb1e7828b0b3ca446c4_222071_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/a275e9b679d4a93a158aabe0b7a84352_314315_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/8c34acb60cc0dfc6e420566faf6913d2_58400_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/ccce9be9a1b7a813d5f88ae8d825fb0f_306225_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/0dea34cb9092cbe304b7d00c1d570827_58415_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/563bec3015a2bca12015662f891ea8ef_58424_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/b560f3d73640b7841ad3091037bc4b0e_269122_0.jpg" alt=""></div>
+      <div class="carousel-item"><img src="https://mercury.akamaized.net/i/67e156f8634b7f830f7d73ed617a49ad_260287_0.jpg" alt=""></div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="nav-btn prev-btn" id="prevBtn">&lt;</button>
+    <button class="nav-btn next-btn" id="nextBtn">&gt;</button>
+  </div>
+
+  <script>
+  
+    // const track = document.getElementById('carouselTrack');
+    // const prevBtn = document.getElementById('prevBtn');
+    // const nextBtn = document.getElementById('nextBtn');
+    const items = document.querySelectorAll('.carousel-item');
+    const itemsPerPage = 3;
+    const totalItems = items.length;
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      const itemWidth = items[0].offsetWidth + 20;
+      track.style.transform = `translateX(-${currentSlide * itemWidth}px)`;
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide >= totalItems - itemsPerPage;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarousel();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < totalItems - itemsPerPage) {
+        currentSlide++;
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel();
+  </script>
+  </header>
+    
+   
+ 
+  <!-- Header End -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+  
