@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-nav{
+    display: flex;
+   justify-content: space-between;
+   font-size: 17px;
+   background-color: aliceblue;
+   padding: 1rem;
+   height: 10vh;
+   margin-left: 6%;
+   margin-right: 6%;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+    background-size: cover;
+    cursor: pointer;
+}
+.nav2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 .second{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem; 
+    cursor: pointer;
+}
+.nav2 ul li a:hover{
+  color: #8e0e0e;
+}
+.nav1:hover{
+    color:brown;
+}
+.second-nav{
+    position:sticky;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+    z-index: 3;
+}
+.second-nav:hover{
+    cursor: pointer;
+}
+.nav3 .n3{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.n3 li a{
+  color: black;
+  text-decoration: none;
+}
+.n3 li a:hover{
+  cursor: pointer;
+  color: #521919;
+}
+.n4{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem; 
+}
+.dropdown form{
+    width: 27vw;
+    height: 44vh;
+    align-items: center;
+    padding: 3rem;
+}
+form .mb-3 .radio1{
+    margin-bottom: 10%;
+}
+form .mb-3 .form-control{
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+form p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+form p:hover{
+    color: brown;
+    cursor: pointer;
+}
+form  p i{
+ color: brown;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    .dropdown-content a:hover {
+        background-color: #883333;
+        color: white;
+    }
+  .home:hover .dropdown-content {display: block;}
+  .dropdown-content1 {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 a:hover {
+    background-color: #883333;
+    color: white;}
+.home:hover .dropdown-content1 {display: block;}
+  .n3 li:hover{
+    color: brown;
+  }
+  .nav2 .second li:hover{
+    color: brown;
+  }
+  .submenu {
+    position: relative;
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu:hover .sub-dropdown {
+    display: block;
+}
+
+  .bg{
+    background: brown url('page-title.jpg') no-repeat center;
+    opacity: 0.8px;
+    background-size: cover;
+    width: 99vw;
+    height: 50vh;
+    color: white;
+    opacity: 0.8px;
+  }
+  .background {
+    position: relative; 
+    width: 99%;
+    height: 50vh; 
+    background: url('page-title.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.7); 
+}
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 2rem;
+}
+.content2 h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: white; 
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.content2 p {
+    font-size: 23px;
+    color: white; 
+    justify-content: flex-end;
+    align-self: flex-end; 
+}
+    .demoR {
+        margin-top: 8%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin-left: 50px;
+        margin-right: 7%;
+    }
+
+     .demoR h1 {
+        font-size: 50px;
+        position: relative;
+        left: 50px;
+    }
+
+    .demoR p {
+        color: red;
+        position: relative;
+        left: 50px;
+    }
+
+    .demoR .right {
+        float: right;
+        position: relative;
+        bottom: 30px;
+        right: 0px;
+    }
+
+    .demoR .by {
+        color: gray;
+        margin-left: 20px;
+    }
+
+    .demoR .mar {
+        position: relative;
+        top: 1px;
+        color: red;
+    }
+
+    .demoR .for {
+        font-size: 50px;
+    }
+
+    .demoR .for1 {
+        font-size: 30px;
+
+    }
+
+    .demoR .demo1 {
+        margin-left: 20px;
+    }
+
+    .demoR .for2:hover {
+        color: red;
+    }
+
+    .demoR .for2 {
+        font-size: 20px
+    }
+
+    .demoR a {
+        color: black;
+        float: right;
+        text-decoration: none;
+        position: relative;
+        right: 40px;
+    }
+
+    .demoR a:hover {
+        color: red;
+    }
+
+    .demoR .row {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    .demo2R {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        width: 380px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+    .footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: red;
+}
+
+.email-box {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+}
+.email-box a{
+    color: black;
+    text-decoration: none;
+}
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.query-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 15px 0;
+  border-top: 1px solid #ddd; /* Optional separator */
+}
+
+.social-icons a img {
+  width: 24px; /* Adjust size */
+  margin: 0 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  opacity: 0.7;
+}
+
+.footer-logo img {
+  width: 150px; /* Adjust logo size */
+}
+
+.footer-policy {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-policy a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-policy a:hover {
+  color: red;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+</style>
+
+<body>
+
+    <div class="first-nav">
+        <div class="nav1">
+            <div class="looking">
+             <div class="dropdown">
+                 <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(203, 56, 56); color: white;"><img src="icon-1.png">
+                   Looking: Personal
+                 </button>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Personal</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 2</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 3</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 4</a></li>
+                 </ul>
+               </div>
+            </div>
+               <div class="login">
+                 <div class="dropdown">
+                     <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-2.png">
+                      Login
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Login</a></li>
+                       <li><a class="dropdown-item" href="#">LogOut</a></li>
+                       <li><a class="dropdown-item" href="#">SignUp</a></li>
+                     </ul>
+                   </div>
+               </div>
+               <div class="mail">
+                 <p> <img src="icon-3.png">getSupport@example.com</p>
+               </div>
+         </div>
+         <div class="nav2">
+            
+                <ul class="second" style="text-decoration: none; color: black;">
+                    <li><a href="career.html"><img src="icon-4.png">Careers</a></li>
+                    <li><a href="faq.html">Faq's</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Reward</a></li>
+                 <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-5.png">
+                         Us-En
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Us-En</a></li>
+                          <li><a class="dropdown-item" href="#">Uk-En</a></li>
+                          <li><a class="dropdown-item" href="#">Canada-En</a></li>
+                          <li><a class="dropdown-item" href="#">France-Fr</a></li>
+                          <li><a class="dropdown-item" href="#">Italy-It</a></li>
+                          <li><a class="dropdown-item" href="#">Turky-Tu</a></li>
+                        </ul>
+                      </div>
+                </ul>
+         </div>
+    </div>
+    <div class="second-nav">
+      <div class="nav3">
+          <ul class="n3" style="list-style-type: none;">
+              <li><img src="logo.png"></li>
+  
+              <li class="home">Home <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="home.html">Home Page 01</a></li>
+                      <li><a href="#">Home Page 02</a></li>
+                      <li><a href="#">Home Page 03</a></li>
+                      <li><a href="#">Home Page 04</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Service <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content"style="list-style-type: none;">
+                      <li class="submenu">
+                          <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="Account.html">All Accounts</a></li>
+                              <li><a href="#">Savings Account</a></li>
+                              <li><a href="#">Current Account</a></li>
+                              <li><a href="#">Family 360</a></li>
+                              <li><a href="#">Senior Citizen</a></li>
+                              <li><a href="#">Demat Account</a></li>
+                              <li><a href="#">Business Account</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#">Investment <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sub-dropdown">
+                            <li><a href="tradeFx.html">Trade FX</a></li>
+                            <li><a href="#">Multi Currency A/C</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Insurence</a></li>
+                            <li><a href="#">Tax-Deferred-Investment</a></li>
+                            <li><a href="#">Investment Advisory</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                      <ul class="sub-dropdown">
+                         <li><a href="#">All Cards</a></li>
+                         <li><a href="#">Platinum Cards</a></li>
+                         <li><a href="#">Millinnia Card</a></li>
+                         <li><a href="#">Money Back Card</a></li>
+                         <li><a href="#">Easy EMI Card</a></li>
+                         <li><a href="#">Dinners Club Privilege</a></li>
+                         <li><a href="#">Titanium Times</a></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </li>
+  
+              <li class="home">About <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="aboutUs.html">About Us</a></li>
+                      <li class="submenu"><a href="#">Leadership <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="leadership.html">Leadership</a></li>
+                              <li><a href="leadershipDetails.html">Leadership Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu"><a href="#">Careers</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="career.html">Careers</a></li>
+                          <li><a href="careerDetailas.html">Careers Details</a></li>
+                      </ul></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                      <li><a href="404.html">404</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">News <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="gridView01.html">Grid View 01</a></li>
+                      <li><a href="#">Grid View 02</a></li>
+                      <li><a href="#">List View 01</a></li>
+                      <li><a href="#">List View 02</a></li>
+                      <li><a href="#">Single Post</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Apply Now <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li class="submenu"><a href="#">Loans</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="applynow.html">Home Loan</a></li>
+                          <li><a href="#">Personal Loan</a></li>
+                          <li><a href="#">Vehicle Loan</a></li>
+                          <li><a href="#">Education Loan</a></li>
+                          <li><a href="#">Gold Loan</a></li>
+                      </ul>
+                      <li><a href="#">Credit Card</a></li>
+                      <li><a href="#">Debit Card</a></li>
+                  </ul>
+              </li>
+  
+              <li><a href="getInTouch.html">Get in touch</a></li>
+          </ul>
+      </div>
+      <div class="nav4">
+        <ul class="n4">
+          <li>Search <img src="icon-7.png"></li>
+          <li style=":hover{color: brown;}"><img src="icon-8.png"> Support</li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <img src="icon-10.png">
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <div class="radio1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Bransches</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">ATM's</label><br>
+                  </div>
+                <div class="mb-3" style="margin-bottom: 5%;">
+                  <input type="text" class="form-control" placeholder="Current Loaction">
+                  [or]
+                  <input type="text" class="form-control" placeholder="City name: Pune">
+                </div>
+                <p><i class="fa-solid fa-arrow-right"></i>   Find On Map</p>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="content2">
+        <h1>Blog Post</h1>
+        <p>Home > News > Grid View 01</p>
+    </div>
+</div>
+    <div class="demoR">
+        <!-- -->
+        <div class="row">
+            <!-- financial planning -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-1.jpg" alt=""><br><br>
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png" alt="">
+                <span class="mar">FINANCIAL PLANNING</span> <br>
+                <span><span class="by"><b>By</b></span> <b class="for2">D.Beckham</b><span class="right"><b
+                            class="for1"> 21</b><br>
+                        Jul, 2025</span>
+                </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>How to improve Your Credit<br> <span class="demo1">Score Tips and
+                            Tricks.</b></span></span><br>
+                <b class="demo1R" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    5 Mins Read</b>
+                <a href="https://azim.hostlin.com/Flexibank/blog-details.html">-></a>
+                
+            </div>
+
+
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-2.jpg" alt=""><br><br>
+                <span class="demo1R"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">CREDIT CARD</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">Vk.Christopher</b><span class="right"><b
+                                class="for1"> 06</b><br>
+                            Jul, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>Boost Gains: Best Practices<br> <span class="demo1">for Credit Card
+                            Use.</b></span></span><br>
+                <b class="demo1R" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    4 Mins Read</b>
+                <a href="">-></a>
+            </div>
+
+
+
+            <!-- Business Banking -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-2.jpg" alt=""><br><br>
+                <span class="demo1R"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Business Banking</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">Z.Benjamin</b><span class="right"><b
+                                class="for1"> 15</b><br>
+                            Jun, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>Growth Strategies <br> <span class="demo1R">for Your Small
+                            Business.</b></span></span><br>
+                <b class="demo1R" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    6 Mins Read</b>
+                <a href="">-></a>
+            </div>
+
+            <!-- Technology -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-1.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Technology</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">L.Nathaniel</b><span class="right"><b
+                                class="for1"> 31</b><br>
+                            May, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>Digital Payment Systems: The <br> <span class="demo1">Future of
+                            Transactions.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    5 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <!-- Financial Planning -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-2.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Financial Planning</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">L.D.Beckham</b><span class="right"><b
+                                class="for1"> 21</b><br>
+                            Jul, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>How to Improve Your Credit <br> <span class="demo1">Score Tips and
+                            Tricks.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    5 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <!-- CREDIT CARD -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-2.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">CREDIT CARD</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">Vk.Christopher</b><span class="right"><b
+                                class="for1"> 06</b><br>
+                            Jul, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1 for2R"><b>Boost Gains: Best Practices<br> <span class="demo1">for Credit Card
+                            Use.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    4 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <!-- Business Banking -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-1.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Business Banking</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">Z.Benjamin</b><span class="right"><b
+                                class="for1"> 15</b><br>
+                            Jun, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>Growth Strategies <br> <span class="demo1">for Your Small
+                            Business.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    6 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <!-- Technology -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-1.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Technology</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">L.Nathaniel</b><span class="right"><b
+                                class="for1"> 31</b><br>
+                            May, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>Digital Payment Systems: The <br> <span class="demo1">Future of
+                            Transactions.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    5 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <!-- Financial Planning -->
+            <div class="col-4 demo2R">
+                <img src="https://azim.hostlin.com/Flexibank/assets/images/news/news-2.jpg" alt=""><br><br>
+                <span class="demo1"><img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-36.png"
+                        alt="">
+                    <span class="mar">Financial Planning</span> <br>
+                    <span><span class="by"><b>By</b></span> <b class="for2">L.D.Beckham</b><span class="right"><b
+                                class="for1"> 21</b><br>
+                            Jul, 2025</span>
+                    </span>
+                </span>
+                <br><br>
+                <hr>
+                <span class="demo1R for2"><b>How to Improve Your Credit <br> <span class="demo1">Score Tips and
+                            Tricks.</b></span></span><br>
+                <b class="demo1" style="color:gray; position: relative; top:10px;"><img
+                        src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-37.png" alt="">
+                    5 Mins Read</b>
+                <a href="">-></a>
+            </div>
+            <footer class="footer">
+                <div class="content">
+                    <div class="container">
+                        <img src="footer.png"height="80px" width="300px">
+                    </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Enquiry Section -->
+                        <div class="col-lg-3 col-md-6">
+                            <h6>Enquiry</h6>
+                            <ul class="footer-list">
+                                <li><b>0800 896 1234</b> (Toll Free)</li>
+                                <li>Personal</li>
+                                <li>+49 69 1234 5678</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="email-box">
+                                <img src="icon-3.png" alt="Email" class="icon"> 
+                                <a href="getsupport@flexibank.com"><b>getsupport@flexibank.com</b>      <i class="fa-solid fa-arrow-right"></i></a>
+                                <p class="query-text">Send your queries.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Banking Hours Section -->
+                        <div class="col-lg-3 col-md-6">
+                            <h6>Banking Hours</h6>
+                            <ul class="footer-list">
+                                <li>9:00 AM to 5:00 PM</li>
+                                <li>Monday - Friday</li>
+                                <li>9:00 AM to 2:00 PM</li>
+                                <li>Saturday</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Our Bank & Support Section -->
+                        <div class="col-lg-3 col-md-6" style="border-left: 2px solid gray;">
+                            <h6>Our Bank</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">About Us</a></li><BR>
+                                <li><a href="#">Awards & Recognition</a></li><BR>
+                                <li><a href="#">Leadership</a></li><BR>
+                                <li><a href="#">News & Media</a></li>
+                            </ul>
+                            <h6>Support</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Branches</a></li><BR>
+                                <li><a href="#">ATMs</a></li><BR>
+                                <li><a href="#">Customer Care</a></li><BR>
+                                <li><a href="#">FAQs</a></li><BR>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Products Section -->
+                        <div class="col-lg-3 col-md-6">
+                            <h6>Products</h6>
+                            <ul class="footer-list">
+                                <li><a href="#">Accounts</a></li><BR>
+                                <li><a href="#">Fixed Deposits</a></li><BR>
+                                <li><a href="#">Credit Cards</a></li><BR>
+                                <li><a href="#">Loans</a></li><BR>
+                                <li><a href="#">Locker</a></li><BR>
+                                <li><a href="#">Money Transfer</a></li><BR>
+                                <li><a href="#">Investments</a></li><BR>
+                                <li><a href="#">Insurance</a></li><BR>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <hr class="footer-divider">
+            
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <a href="#"><img src="a.png" alt="Branch Icon" class="icon"> Branches & ATMs</a>
+                        <a href="#"><img src="b.png" alt="Complaint Icon" class="icon"> Complaints Registration</a>
+                        <a href="#"><img src="c.png" alt="Download Icon" class="icon"> Download Forms</a>
+                    </div>
+            
+                    <!-- Social Media & Copyright -->
+                    <div class="footer-bottom">
+                        <div class="social-icons">
+                            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="insta.png" alt="Instagram"></a>
+                            <a href="#"><img src="youtube (1).png" alt="YouTube"></a>
+                            <a href="#"><img src="link.png" alt="LinkedIn"></a>
+                        </div>
+            
+                        <div class="footer-logo">
+                            <img src="logo.png" alt="FlexiBank Logo">
+                        </div>
+            
+                        <div class="footer-policy">
+                            <a href="#">Privacy Policy</a> |
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+            
+                        <p class="copyright" style="color: black;">&copy; 2025 <span>FlexiBank.</span> All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

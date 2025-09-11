@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch & Branch Locator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    
+    .first-nav{
+    display: flex;
+   justify-content: space-between;
+   font-size: 17px;
+   background-color: aliceblue;
+   padding: 1rem;
+   height: 10vh;
+   margin-left: 6%;
+   margin-right: 6%;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+    background-size: cover;
+    cursor: pointer;
+}
+.nav2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 .second{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem; 
+    cursor: pointer;
+}
+.nav2 ul li a:hover{
+  color: #8e0e0e;
+}
+.nav1:hover{
+    color:brown;
+}
+.second-nav{
+    position:sticky;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+    z-index: 3;
+}
+.second-nav:hover{
+    cursor: pointer;
+}
+.nav3 .n3{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.n3 li a{
+  color: black;
+  text-decoration: none;
+}
+.n3 li a:hover{
+  cursor: pointer;
+  color: #521919;
+}
+.n4{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem; 
+}
+.dropdown form{
+    width: 27vw;
+    height: 44vh;
+    align-items: center;
+    padding: 3rem;
+}
+form .mb-3 .radio1{
+    margin-bottom: 10%;
+}
+form .mb-3 .form-control{
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+form p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+form p:hover{
+    color: brown;
+    cursor: pointer;
+}
+form  p i{
+ color: brown;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    .dropdown-content a:hover {
+        background-color: #883333;
+        color: white;
+    }
+  .home:hover .dropdown-content {display: block;}
+  .dropdown-content1 {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 a:hover {
+    background-color: #883333;
+    color: white;}
+.home:hover .dropdown-content1 {display: block;}
+  .n3 li:hover{
+    color: brown;
+  }
+  .nav2 .second li:hover{
+    color: brown;
+  }
+  .submenu {
+    position: relative;
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu:hover .sub-dropdown {
+    display: block;
+}
+    .background {
+    position: relative; 
+    width: 99%;
+    height: 50vh; 
+    background: url('page-title.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.7); 
+}
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 2rem;
+}
+.content2 h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white; 
+   margin-top: 8%;
+   margin-left: 10%;
+}
+.content2 p {
+    font-size: 23px;
+    color: white; 
+    justify-content: flex-end;
+    align-self: flex-end; 
+}
+
+.contact-section {
+    padding: 60px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-section .section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.contact-section .main-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 600px;
+    margin: auto;
+}
+
+
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+
+.contact-card .icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.contact-card .icon i {
+    font-size: 24px;
+    color: red;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+
+.contact-card .icon:hover {
+    transform: scale(1.1);
+    background: lightgray;
+}
+
+.contact-card .icon i:hover {
+    transform: scale(1.2);
+    color: darkred;
+}
+
+
+.contact-card .content h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-card .content p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.contact-card .content strong {
+    font-size: 16px;
+    color: black;
+}
+.locator-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+}
+
+.locator-container {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.locator-left {
+    background: #600000;
+    color: black;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.locator-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.find-box {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.locator-right {
+    flex: 1;
+    height: 100%;
+}
+
+
+.map-container {
+    position: relative;
+    height: 100%;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 250px;
+}
+
+.map-overlay h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.map-overlay strong {
+    font-size: 16px;
+    color: #600000;
+}
+
+.locator-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.locator-options label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.red-dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.locator-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f8f8f8;
+    font-size: 16px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input-container i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: gray;
+}
+
+.or-text {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.find-box {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.find-map {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.find-map:hover {
+    background: red;
+}
+
+.locator-right {
+    flex: 1;
+    height: 100%;
+}
+.container-get, .customer   {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container-get h1, h1  {
+    color: #333;
+}
+
+.container-get h5, h5 {
+    color: red;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    border: none;
+    background-color: #ddd;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-banking, .corporate-banking {
+    flex-basis: 48%;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, #message {
+    gap: 2rem;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#message {
+    height: 220px;
+    resize: vertical;
+}
+
+.submit {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    left: 10%;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Ensure text remains white */
+    background: rgb(106, 16, 16); /* Default button color */
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.4s ease-in-out;
+}
+.submit::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+.submit:hover::after {
+    left: 0;
+}
+.submit span {
+    position: relative;
+    text-align: center;
+    left: 15%;
+    z-index: 1; 
+}
+
+.customer-care {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.customer a {
+    color: #c00;
+}
+.customer  a, p{
+    text-align: center;
+}
+  /* Hide the radio buttons */
+  input[type="radio"] {
+            display: none;
+        }
+.btn11{
+    width: 50%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: rgb(18, 17, 17);
+    transition: background-color 0.3s;
+ }
+ input[type="radio"]:checked + label {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: red;
+}
+
+.email-box {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+}
+.email-box a{
+    color: black;
+    text-decoration: none;
+}
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.query-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 15px 0;
+  border-top: 1px solid #ddd; /* Optional separator */
+}
+
+.social-icons a img {
+  width: 24px; /* Adjust size */
+  margin: 0 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  opacity: 0.7;
+}
+
+.footer-logo img {
+  width: 150px; /* Adjust logo size */
+}
+
+.footer-policy {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-policy a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-policy a:hover {
+  color: red;
+}
+
+.copyright {
+  font-size: 14px;
+}
+  </style>
+</head>
+<body>
+
+    <div class="first-nav">
+        <div class="nav1">
+            <div class="looking">
+             <div class="dropdown">
+                 <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(203, 56, 56); color: white;"><img src="icon-1.png">
+                   Looking: Personal
+                 </button>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Personal</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 2</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 3</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 4</a></li>
+                 </ul>
+               </div>
+            </div>
+               <div class="login">
+                 <div class="dropdown">
+                     <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-2.png">
+                      Login
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Login</a></li>
+                       <li><a class="dropdown-item" href="#">LogOut</a></li>
+                       <li><a class="dropdown-item" href="#">SignUp</a></li>
+                     </ul>
+                   </div>
+               </div>
+               <div class="mail">
+                 <p> <img src="icon-3.png">getSupport@example.com</p>
+               </div>
+         </div>
+         <div class="nav2">
+            
+                <ul class="second" style="text-decoration: none; color: black;">
+                    <li><a href="career.html"><img src="icon-4.png">Careers</a></li>
+                    <li><a href="faq.html">Faq's</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Reward</a></li>
+                 <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-5.png">
+                         Us-En
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Us-En</a></li>
+                          <li><a class="dropdown-item" href="#">Uk-En</a></li>
+                          <li><a class="dropdown-item" href="#">Canada-En</a></li>
+                          <li><a class="dropdown-item" href="#">France-Fr</a></li>
+                          <li><a class="dropdown-item" href="#">Italy-It</a></li>
+                          <li><a class="dropdown-item" href="#">Turky-Tu</a></li>
+                        </ul>
+                      </div>
+                </ul>
+         </div>
+    </div>
+    <div class="second-nav">
+      <div class="nav3">
+          <ul class="n3" style="list-style-type: none;">
+              <li><img src="logo.png"></li>
+  
+              <li class="home">Home <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="home.html">Home Page 01</a></li>
+                      <li><a href="#">Home Page 02</a></li>
+                      <li><a href="#">Home Page 03</a></li>
+                      <li><a href="#">Home Page 04</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Service <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content"style="list-style-type: none;">
+                      <li class="submenu">
+                          <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="Account.html">All Accounts</a></li>
+                              <li><a href="#">Savings Account</a></li>
+                              <li><a href="#">Current Account</a></li>
+                              <li><a href="#">Family 360</a></li>
+                              <li><a href="#">Senior Citizen</a></li>
+                              <li><a href="#">Demat Account</a></li>
+                              <li><a href="#">Business Account</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#">Investment <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sub-dropdown">
+                            <li><a href="tradeFx.html">Trade FX</a></li>
+                            <li><a href="#">Multi Currency A/C</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Insurence</a></li>
+                            <li><a href="#">Tax-Deferred-Investment</a></li>
+                            <li><a href="#">Investment Advisory</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#">Cards <i class="fa-solid fa-angle-right"></i></a>
+                      <ul class="sub-dropdown">
+                         <li><a href="#">All Cards</a></li>
+                         <li><a href="#">Platinum Cards</a></li>
+                         <li><a href="#">Millinnia Card</a></li>
+                         <li><a href="#">Money Back Card</a></li>
+                         <li><a href="#">Easy EMI Card</a></li>
+                         <li><a href="#">Dinners Club Privilege</a></li>
+                         <li><a href="#">Titanium Times</a></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </li>
+  
+              <li class="home">About <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="aboutUs.html">About Us</a></li>
+                      <li class="submenu"><a href="#">Leadership <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="leadership.html">Leadership</a></li>
+                              <li><a href="leadershipDetails.html">Leadership Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu"><a href="#">Careers</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="career.html">Careers</a></li>
+                          <li><a href="careerDetailas.html">Careers Details</a></li>
+                      </ul></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                      <li><a href="404.html">404</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">News <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="gridView01.html">Grid View 01</a></li>
+                      <li><a href="#">Grid View 02</a></li>
+                      <li><a href="#">List View 01</a></li>
+                      <li><a href="#">List View 02</a></li>
+                      <li><a href="#">Single Post</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Apply Now <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li class="submenu"><a href="#">Loans</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="applynow.html">Home Loan</a></li>
+                          <li><a href="#">Personal Loan</a></li>
+                          <li><a href="#">Vehicle Loan</a></li>
+                          <li><a href="#">Education Loan</a></li>
+                          <li><a href="#">Gold Loan</a></li>
+                      </ul>
+                      <li><a href="#">Credit Card</a></li>
+                      <li><a href="#">Debit Card</a></li>
+                  </ul>
+              </li>
+  
+              <li><a href="getInTouch.html">Get in touch</a></li>
+          </ul>
+      </div>
+      <div class="nav4">
+        <ul class="n4">
+          <li>Search <img src="icon-7.png"></li>
+          <li style=":hover{color: brown;}"><img src="icon-8.png"> Support</li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <img src="icon-10.png">
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <div class="radio1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Bransches</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">ATM's</label><br>
+                  </div>
+                <div class="mb-3" style="margin-bottom: 5%;">
+                  <input type="text" class="form-control" placeholder="Current Loaction">
+                  [or]
+                  <input type="text" class="form-control" placeholder="City name: Pune">
+                </div>
+                <p><i class="fa-solid fa-arrow-right"></i>   Find On Map</p>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+    <section class="background">
+        <div class="overlay"></div>
+        <div class="content2">
+            <h1>Get in Touch</h1> 
+            <p>Home > Get in Touch</p>
+        </div>
+          
+        </div>
+    </section>
+
+  
+    <section class="contact-section">
+        <div class="container">
+            <p class="section-title">Corporate Office</p>
+            <h2 class="main-title">Connect with Corporate Team</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Dial Us</h5>
+                            <p>For Instant Help and Friendly Service.</p>
+                            <strong>0800 896 1234 & 5678</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Mail Us</h5>
+                            <p>Questions? Mail us, and we'll handle the rest.</p>
+                            <strong>getsupport@example.com</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Address</h5>
+                            <p>Your Destination for Banking Service.</p>
+                            <strong>14 Hackescher Markt, Mitte 10115, Germany.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <div class="content">
+                            <h5>Banking Hours</h5>
+                            <p>Flexible Banking Hours, Just for You.</p>
+                            <strong>Mon-Sat: 9am to 5pm [2nd Sat Holiday]</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="locator-section">
+        <div class="locator-container">
+            
+            <div class="locator-left">
+                <h2 class="white-text">Over 280 Branches & ATM’s Nationwide</h2>
+
+                <div class="locator-form">
+                    <form action="https://www.google.com/maps/search/" method="GET" target="_blank">
+                        
+                        <div class="locator-options">
+                            <label>
+                                <input type="checkbox" name="branch" checked>
+                                Branches
+                            </label>
+                            <label>
+                                <input type="checkbox" name="atm">
+                                 ATM’s
+                            </label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" name="q" placeholder="Current Location" class="locator-input" required>
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <p class="or-text">[or]</p>
+
+                        <input type="text" name="q" placeholder="City name: Hamburg" class="locator-input">
+
+                        <div class="find-box">
+                            <button type="submit" class="find-map">→ Find On Map</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="locator-right">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.903493372596!2d-74.00601512357293!3d40.71277597933188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19a7d36531%3A0x47f7aaf7a6cdd6d1!2sNew%20York!5e0!3m2!1sen!2sus!4v1616245798991!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="map-overlay">
+                        <h4>St. Georg, Hamburg</h4>
+                        <p>26 Maggie St, Little South<br>Slope, 22763.</p>
+                        <strong>0800 896 1234</strong>
+                    </div>
+                </div>
+            </div>
+ </div>
+ </section>
+ <div class="container-get">
+    <h5>SEND MESSAGE</h5>
+    <h1>Message Our Support Team</h1>
+    <div class="tabs">
+        <input type="radio" id="btn11" name="toggle">
+<label for="btn11" class="btn11">Personal Banking</label>
+
+<input type="radio" id="btn21" name="toggle">
+<label for="btn21" class="btn11">Corporate Banking</label>
+
+    </div>
+    <div class="form-container">
+        <div class="personal-banking">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter name here">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email address">
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Phone number">
+            
+            <label for="reason">Reason for Contact</label>
+            <select id="reason">
+                <option value="bill-payment">Bill Payment Inquiries</option>
+                <option value="general-query">General Inquiry</option>
+            </select>
+        </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Message goes here"></textarea>
+                <button class="submit"><span> <i class="fa-solid fa-arrow-right"></i>  Send Your Message</span></button>
+            </div>
+            
+            <!-- <button type="submit">Send Your Message</button> -->
+        </div>
+    
+        <div class="form">
+        <div class="corporate-banking" style="display:none;">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Message goes here"></textarea>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="customer">
+        <h5>CUSTOMER CARE</h5>
+        <h1>Connect with Customer Care</h1>
+        <div class="customer-care">
+        <table>
+            <thead>
+                <tr>
+                    <th>Services</th>
+                    <th>Contact Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General Query/Complaint</td>
+                    <td>+484 123 4567 89 (Toll Free)<br>customer_care@example.com</td>
+                </tr>
+                <tr>
+                    <td>Credit Card</td>
+                    <td>+484 789 0123 45<br>creditcard@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Have Questions? Check our <a href="#">FAQ's Page</a>.</p>
+    </div>
+</div>
+</div>
+ <footer class="footer">
+    <div class="content">
+        <div class="container">
+            <img src="footer.png"height="80px" width="300px">
+        </div>
+    <div class="container">
+        <div class="row">
+            <!-- Enquiry Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Enquiry</h6>
+                <ul class="footer-list">
+                    <li><b>0800 896 1234</b> (Toll Free)</li>
+                    <li>Personal</li>
+                    <li>+49 69 1234 5678</li>
+                    <li>Corporate</li>
+                </ul>
+                <div class="email-box">
+                    <img src="icon-3.png" alt="Email" class="icon"> 
+                    <a href="getsupport@flexibank.com"><b>getsupport@flexibank.com</b>      <i class="fa-solid fa-arrow-right"></i></a>
+                    <p class="query-text">Send your queries.</p>
+                </div>
+            </div>
+
+            <!-- Banking Hours Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Banking Hours</h6>
+                <ul class="footer-list">
+                    <li>9:00 AM to 5:00 PM</li>
+                    <li>Monday - Friday</li>
+                    <li>9:00 AM to 2:00 PM</li>
+                    <li>Saturday</li>
+                </ul>
+            </div>
+
+            <!-- Our Bank & Support Section -->
+            <div class="col-lg-3 col-md-6" style="border-left: 2px solid gray;">
+                <h6>Our Bank</h6>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Awards & Recognition</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">News & Media</a></li>
+                </ul>
+                <h6>Support</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Branches</a></li>
+                    <li><a href="#">ATMs</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Products</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Fixed Deposits</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Locker</a></li>
+                    <li><a href="#">Money Transfer</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <a href="#"><img src="a.png" alt="Branch Icon" class="icon"> Branches & ATMs</a>
+            <a href="#"><img src="b.png" alt="Complaint Icon" class="icon"> Complaints Registration</a>
+            <a href="#"><img src="c.png" alt="Download Icon" class="icon"> Download Forms</a>
+        </div>
+
+        <!-- Social Media & Copyright -->
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="insta.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube (1).png" alt="YouTube"></a>
+                <a href="#"><img src="link.png" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-logo">
+                <img src="logo.png" alt="FlexiBank Logo">
+            </div>
+
+            <div class="footer-policy">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <p class="copyright">&copy; 2025 <span>FlexiBank.</span> All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
