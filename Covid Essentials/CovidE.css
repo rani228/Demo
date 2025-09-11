@@ -1,0 +1,139 @@
+   /* Custom scrollbar for filters categories */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #94a3b8;
+      border-radius: 3px;
+    }
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #94a3b8 transparent;
+    }
+    /* Ellipses for longer text */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    /* Card Hover Glow */
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    /* //category */
+             .overflow{
+     width: 190px;
+    height: 60px;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    display: inline-block;
+    color:black;
+    background-color:white;
+    overflow: auto;
+    border: none;
+    margin:2px;
+
+}
+
+/* //starting four image */
+body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .wrapper {
+      width: max-content;
+      margin: 15px auto 0;
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px 20px;
+    }
+
+    /* Covid Essentials */
+    .subtitle-box {
+      text-align: start;
+      padding: 8px 0;
+      background: white;
+      font-size: 16px;
+      font-weight: 600;
+      color: #555;
+      border-bottom: 1px dashed #999;
+      margin-bottom: 30px; /* थोडा space वाढवला */
+    }
+
+    /* Shop By Category */
+    .title-box {
+      text-align: left; /* टेक्स्ट right ला */
+      padding: 4px 0;
+      background: white;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      border-bottom: none;
+      margin-bottom: 20px; /* खाली space */
+      width: 100%;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 6px;
+      gap: 6px;
+    }
+
+    .image-card {
+      background: #fff;
+      width: 260px;
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+      box-sizing: border-box;
+      transition: transform 0.2s ease;
+      border: 0px solid #eee;
+      border-radius: 4px;
+    }
+
+    .image-card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .image-card:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1100px) {
+      .wrapper {
+        overflow-x: auto;
+      }
+      .image-container {
+        flex-wrap: nowrap;
+      }
+    }
+
+/* END SECTION TO CLICK in open in anoter file */
+     .company-row {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .company-row a {
+            text-decoration: none;
+            color: blue;
+            margin-right: 15px;
+        }
+        .company-row a:hover {
+            text-decoration: underline;
+        }
