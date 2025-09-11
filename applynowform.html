@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Full Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('appointment-bg.jpg') no-repeat center center/cover;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(139, 0, 0, 0.7); /* Dark red transparency */
+        }
+        
+.vertical-text {
+    position: absolute;
+    left: 5%;  
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg); 
+    writing-mode: vertical-rl; 
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2); 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+ .form-container {
+   position: absolute;
+     left: 10%;
+      top: 50%;
+    transform: translateY(-50%);
+     width: 550px;
+     background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+ .form1{   
+            display: flex;
+            gap: 4rem;
+        }
+        /* Input Fields */
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        label{
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px 40px 12px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Right-aligned icons */
+        .form-group i {
+            position: absolute;
+            right: 15px;
+            top: 70%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+.btn {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; 
+    background: rgb(106, 16, 16); 
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.4s ease-in-out;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+.btn:hover::after {
+    left: 0;
+}
+.btn span {
+    position: relative;
+    text-align: center;
+    left: 15%;
+    z-index: 1; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+    <div class="vertical-text">MAKE AN </div>
+    <div class="form-container">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Enter your name here">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email address">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input type="tel" placeholder="Phone number">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="form1">
+            <div class="form-group">
+                <label for="Date">Date</label>
+                <input type="date" placeholder="Date">
+            </div>
+    
+            <div class="form-group">
+                <label for="Time">Time</label>
+                <input type="time" placeholder="Phone number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Address">Address</label>
+            <input type="tel" placeholder="Address">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button class="btn"><span> <i class="fa-solid fa-arrow-right"></i>  Send Your Request</span></button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chatset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Apply now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="apply now.css">
+</head> 
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:whitesmoke ;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn3{
+    background-color: maroon;
+    color: white;
+    padding: 5px;
+}
+.first-nav{
+    display: flex;
+   justify-content: space-between;
+   font-size: 17px;
+   background-color: aliceblue;
+   padding: 1rem;
+   height: 10vh;
+   margin-left: 6%;
+   margin-right: 6%;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+    background-size: cover;
+    cursor: pointer;
+}
+.nav2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 .second{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem; 
+    cursor: pointer;
+}
+.nav2 ul li a:hover{
+  color: #8e0e0e;
+}
+.nav1:hover{
+    color:brown;
+}
+.second-nav{
+    position:sticky;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+    z-index: 3;
+}
+.second-nav:hover{
+    cursor: pointer;
+}
+.nav3 .n3{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.n3 li a{
+  color: black;
+  text-decoration: none;
+}
+.n3 li a:hover{
+  cursor: pointer;
+  color: #521919;
+}
+.n4{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem; 
+}
+.dropdown form{
+    width: 27vw;
+    height: 44vh;
+    align-items: center;
+    padding: 3rem;
+}
+form .mb-3 .radio1{
+    margin-bottom: 10%;
+}
+form .mb-3 .form-control{
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+form p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+form p:hover{
+    color: brown;
+    cursor: pointer;
+}
+form  p i{
+ color: brown;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    .dropdown-content a:hover {
+        background-color: #883333;
+        color: white;
+    }
+  .home:hover .dropdown-content {display: block;}
+  .dropdown-content1 {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 a:hover {
+    background-color: #883333;
+    color: white;}
+.home:hover .dropdown-content1 {display: block;}
+  .n3 li:hover{
+    color: brown;
+  }
+  .nav2 .second li:hover{
+    color: brown;
+  }
+  .submenu {
+    position: relative;
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu:hover .sub-dropdown {
+    display: block;
+}
+
+  .bg{
+    background: brown url('page-title.jpg') no-repeat center;
+    opacity: 0.8px;
+    background-size: cover;
+    width: 99vw;
+    height: 50vh;
+    color: white;
+    opacity: 0.8px;
+  }
+  .background1 {
+    position: relative; 
+    width: 99%;
+    height: 50vh; 
+    background: url('page-title.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.7); 
+}
+.content3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 2rem;
+}
+.content3 h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+   
+    align-self: flex-start;
+}
+.content3 p {
+    font-size: 23px;
+    color: white; 
+    justify-content: flex-end;
+    align-self: flex-end; 
+    margin-top: 15%;
+
+}
+  
+.background {
+    position: relative; 
+    width: 99%;
+    height: 70vh; 
+    background: url('page-title.jpg') no-repeat center center/cover;
+    overflow: hidden;}
+
+.container2{
+    height: 40vh;
+    background-color:darkred;
+    color: white;
+    background-size: cover;
+    text-align: right;
+    padding: 50px;
+}
+main{
+    width: 90%;
+    margin-top: 5%;
+    padding: 5px;
+    margin-left: 6%;
+    display: flex;
+    justify-content:space-around 50px;
+    align-items: center;
+    background-color:rgba(237, 234, 234, 0.566);
+}
+.section ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+section h2{
+    margin-left: 5%;
+    text-align: center;
+
+}
+section p{
+margin-left: 5%;
+    padding-left: 40px;
+}
+.sectionimg{
+    float: right;
+}
+.D1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    font-weight: 400;
+}
+.D1 a{
+    color: red;
+}
+.d2 button{
+    border:2px solid maroon;
+    color: white;
+    padding: 15px;
+    background-color: maroon;
+}
+.d2 button:hover{
+    background-color: white;
+    color:red;
+}
+.how{
+    font-weight:bold;
+    padding-top: 30px;
+}
+.container4{
+    height: 44vh;
+    width: 93vw;
+    border:30px solid whitesmoke;
+    background-color: whitesmoke;
+    margin:5px 50px 5px 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.container {
+    margin-left: 11%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Numbering */
+        .card::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Bottom Icon - Half Inside, Half Outside */
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -25px;  /* Moves half outside */
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            background: url('appointment-bg.jpg') no-repeat center center/cover;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(139, 0, 0, 0.7); /* Dark red transparency */
+        }
+        
+.vertical-text {
+    position: absolute;
+    left: 5%;  
+    top: 280%;
+    transform: translateY(-50%) rotate(180deg); 
+    writing-mode: vertical-rl; 
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2); 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+ .form-container {
+   position: absolute;
+     left: 10%;
+      top: 300%;
+    transform: translateY(-50%);
+     width: 550px;
+     background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+ .form1{   
+            display: flex;
+            gap: 4rem;
+        }
+        /* Input Fields */
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        label{
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px 40px 12px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Right-aligned icons */
+        .form-group i {
+            position: absolute;
+            right: 15px;
+            top: 70%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+.btn {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; 
+    background: rgb(106, 16, 16); 
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.4s ease-in-out;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: left 0.4s ease-in-out;
+    z-index: 0;
+}
+.btn:hover::after {
+    left: 0;
+}
+.btn span {
+    position: relative;
+    text-align: center;
+    left: 15%;
+    z-index: 1; 
+}
+.E1{
+    margin-top: 6%;
+}
+.containerS{ height:550px;
+    width:1200px;
+    
+    position: relative;
+    margin-left:168px;
+    margin-right:80px;
+    margin-top:80%;
+    background-color:white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.state:active{color:white;}
+
+.itemS { width: 400px;
+height: 80px;
+background-color: white;
+border: 1px solid gray;
+
+
+}
+
+.rowS{display:flex;
+margin-left:30px;
+gap:40px;}
+
+
+
+.demoS {clip-path:circle(80%);
+position:absolute;
+top:80px;
+right:140px;
+background-color:white;
+}
+
+.pageS{ position:absolute;
+
+margin-left:70px;
+
+}
+
+.verticalS {
+position: absolute;
+right: 2%;  
+top:450%;
+font-family:sans-serif;
+transform: translateY(-50%) rotate(180deg); 
+writing-mode: vertical-rl; 
+font-size: 5rem;
+color: gray;
+letter-spacing: 1px;
+text-transform: uppercase;
+opacity:0.2;
+}
+
+.textS{
+position: absolute;
+left: 6%;  
+top: 415%;
+transform: translateY(-50%) rotate(180deg); 
+writing-mode: vertical-rl; 
+font-size: 5.5rem;
+font-weight: bold;
+color: rgba(255, 255, 255, 0.2); 
+letter-spacing: 5px;
+text-transform: uppercase;
+color:gray;
+font-family:sans-serif;
+font-size:100px;
+opacity:0.4;
+}
+.container1S{ height:800px;
+    width:1500px;
+    background-color:maroon;
+    position:static;
+    overflow: hidden;
+    }
+    
+.subdivS{ height:600px;
+    width:400px;
+    background-color:hsl(0, 40%, 50%);
+    position:relative;
+    left:200px;
+    top:125px;
+    bottom:125px;
+    }
+
+.imgS{ position:relative;
+top:110px;
+bottom:180px;
+left:50px;
+ }
+
+.subdiv1S{height:40px;
+width:200px;
+padding:5px;
+background-color:white;
+border:1px solid;
+position:relative;
+top:50px;
+left:250px;
+text-align:center;
+font-size:18px;
+padding-top:10px;
+font-family:sans-serif;
+
+}
+
+.subdiv2S{height:40px;
+width:200px;
+padding:5px;
+background-color:white;
+border:1px solid;
+position:relative;
+top:510px;
+left:70px;
+text-align:center;
+font-size:18px;
+padding-top:10px;
+font-family:sans-serif;
+
+}
+
+.subdiv3S{ position:relative;
+ bottom:500px;
+ right:70px;
+}
+.footer {
+    width: 95VW;
+    margin-left: 2%;
+    margin-top: 20%;
+    color: #333;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: red;
+}
+
+.email-box {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+}
+.email-box a{
+    color: black;
+    text-decoration: none;
+}
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.query-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 15px 0;
+  border-top: 1px solid #ddd; /* Optional separator */
+}
+
+.social-icons a img {
+  width: 24px; /* Adjust size */
+  margin: 0 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  opacity: 0.7;
+}
+
+.footer-logo img {
+  width: 150px; /* Adjust logo size */
+}
+
+.footer-policy {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-policy a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-policy a:hover {
+  color: red;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+</style>
+<body>
+    <div class="first-nav">
+        <div class="nav1">
+            <div class="looking">
+             <div class="dropdown">
+                 <button class="btn3  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-1.png">
+                   Looking: Personal
+                 </button>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Personal</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 2</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 3</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 4</a></li>
+                 </ul>
+               </div>
+            </div>
+               <div class="login">
+                 <div class="dropdown">
+                     <button class="btn3  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-2.png">
+                      Login
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Login</a></li>
+                       <li><a class="dropdown-item" href="#">LogOut</a></li>
+                       <li><a class="dropdown-item" href="#">SignUp</a></li>
+                     </ul>
+                   </div>
+               </div>
+               <div class="mail">
+                 <p> <img src="icon-3.png">getSupport@example.com</p>
+               </div>
+         </div>
+         <div class="nav2">
+            
+                <ul class="second" style="text-decoration: none; color: black;">
+                    <li><a href="career.html"><img src="icon-4.png">Careers</a></li>
+                    <li><a href="faq.html">Faq's</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Reward</a></li>
+                 <div class="dropdown">
+                        <button class="btn3  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-5.png">
+                         Us-En
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Us-En</a></li>
+                          <li><a class="dropdown-item" href="#">Uk-En</a></li>
+                          <li><a class="dropdown-item" href="#">Canada-En</a></li>
+                          <li><a class="dropdown-item" href="#">France-Fr</a></li>
+                          <li><a class="dropdown-item" href="#">Italy-It</a></li>
+                          <li><a class="dropdown-item" href="#">Turky-Tu</a></li>
+                        </ul>
+                      </div>
+                </ul>
+         </div>
+    </div>
+    <div class="second-nav">
+      <div class="nav3">
+          <ul class="n3" style="list-style-type: none;">
+              <li><img src="logo.png"></li>
+  
+              <li class="home">Home <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="home.html">Home Page 01</a></li>
+                      <li><a href="#">Home Page 02</a></li>
+                      <li><a href="#">Home Page 03</a></li>
+                      <li><a href="#">Home Page 04</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Service <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content"style="list-style-type: none;">
+                      <li class="submenu">
+                          <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="Account.html">All Accounts</a></li>
+                              <li><a href="#">Savings Account</a></li>
+                              <li><a href="#">Current Account</a></li>
+                              <li><a href="#">Family 360</a></li>
+                              <li><a href="#">Senior Citizen</a></li>
+                              <li><a href="#">Demat Account</a></li>
+                              <li><a href="#">Business Account</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#">Investment <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sub-dropdown">
+                            <li><a href="tradeFx.html">Trade FX</a></li>
+                            <li><a href="#">Multi Currency A/C</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Insurence</a></li>
+                            <li><a href="#">Tax-Deferred-Investment</a></li>
+                            <li><a href="#">Investment Advisory</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#">Cards <i class="fa-solid fa-angle-right"></i></a>
+                      <ul class="sub-dropdown">
+                         <li><a href="#">All Cards</a></li>
+                         <li><a href="#">Platinum Cards</a></li>
+                         <li><a href="#">Millinnia Card</a></li>
+                         <li><a href="#">Money Back Card</a></li>
+                         <li><a href="#">Easy EMI Card</a></li>
+                         <li><a href="#">Dinners Club Privilege</a></li>
+                         <li><a href="#">Titanium Times</a></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </li>
+  
+              <li class="home">About <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="aboutUs.html">About Us</a></li>
+                      <li class="submenu"><a href="#">Leadership <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="leadership.html">Leadership</a></li>
+                              <li><a href="leadershipDetails.html">Leadership Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu"><a href="#">Careers</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="career.html">Careers</a></li>
+                          <li><a href="careerDetailas.html">Careers Details</a></li>
+                      </ul></li>
+                      <li><a href="#">FAQ's</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                      <li><a href="404.html">404</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">News <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="gridView01.html">Grid View 01</a></li>
+                      <li><a href="#">Grid View 02</a></li>
+                      <li><a href="#">List View 01</a></li>
+                      <li><a href="#">List View 02</a></li>
+                      <li><a href="#">Single Post</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Apply Now <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li class="submenu"><a href="#">Loans</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="applynow.html">Home Loan</a></li>
+                          <li><a href="#">Personal Loan</a></li>
+                          <li><a href="#">Vehicle Loan</a></li>
+                          <li><a href="#">Education Loan</a></li>
+                          <li><a href="#">Gold Loan</a></li>
+                      </ul>
+                      <li><a href="#">Credit Card</a></li>
+                      <li><a href="#">Debit Card</a></li>
+                  </ul>
+              </li>
+  
+              <li><a href="getInTouch.html">Get in touch</a></li>
+          </ul>
+      </div>
+      <div class="nav4">
+        <ul class="n4">
+          <li>Search <img src="icon-7.png"></li>
+          <li style=":hover{color: brown;}"><img src="icon-8.png"> Support</li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn3  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <img src="icon-10.png">
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <div class="radio1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Bransches</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">ATM's</label><br>
+                  </div>
+                <div class="mb-3" style="margin-bottom: 5%;">
+                  <input type="text" class="form-control" placeholder="Current Loaction">
+                  [or]
+                  <input type="text" class="form-control" placeholder="City name: Pune">
+                </div>
+                <p><i class="fa-solid fa-arrow-right"></i>   Find On Map</p>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="background1">
+    <div class="overlay1"></div>
+    <div class="content3">
+        <h1>Apply Now</h1>
+        <p>Home > Apply Now > Home Loan</p>
+    </div>
+</div>
+    <main>
+        <section class="container3">
+        <h1 style="text-align: left;"><b>More than just a card-it's freedom...</b></h1>
+        <p>Welcomed and every pain avoidedduty or the obligations of business our power of choice.</p> 
+           <div class="offers">
+            <ul type="none"class=offers>
+                <li><img src="icon-16.png">Exclusive discounts and offers</li>
+                <li><img src="icon-16.png">Generous Rewards Program</li>
+                <li><img src="icon-16.png">Advanced security features</li>
+                <li><img src="icon-16.png">Flexible Credit Limits</li>
+            </ul>
+        </section>
+        <section>
+            <img class="sectionimg" src="card-1.png" alt="fexibank card"width="90%"height="120%" style="margin-left: 150%;">
+        </section>
+    </main>
+    <div class="D1">
+        <div class="d1">
+            <p><i class="fa-solid fa-sparkle"></i>Unlock Exclusive Rewards,<a href="#">Apply Now</a> and Elevate your Everyday Spending. </p>
+        </div>
+        <div class="d2">
+            <button> <i class="fa-solid fa-arrow-right"></i> Enquiry Now</button>
+        </div>
+    </div>
+    <div  class="how"style="text-align: center;color: red;"><pre>.--How It’s Work</pre></div>
+    <div style="text-align: center;"><h2><strong> Start Banking with in 5 Mins</strong></h2></div>
+    <div class="container">
+        <div class="card" data-number="01">
+            <h3>Verify Customer</h3>
+            <p>Nor again is there anyone who loves or pursues desire obtain pain all itself.</p>
+            <div class="icon">
+                <img src="icon-184.png" alt="User Icon">
+            </div>
+        </div>
+        <div class="card" data-number="02">
+            <h3>Documentation</h3>
+            <p>One rejects, dislikes avoids pleasure itself because it is who do not know.</p>
+            <div class="icon">
+                <img src="icon-185.png" alt="Document Icon">
+            </div>
+        </div>
+        <div class="card" data-number="03">
+            <h3>A/c Verification</h3>
+            <p>Ever undertakes laborious physical exercise except in all advantages.</p>
+            <div class="icon">
+                <img src="icon-186.png" alt="Check Icon">
+            </div>
+        </div>
+        <div class="card" data-number="04">
+            <h3>Start Banking</h3>
+            <p>Foresee the pain & trouble that are bound ensue equal blame belongs fail.</p>
+            <div class="icon">
+                <img src="icon-187.png" alt="Bank Icon">
+            </div>
+        </div>
+    </div>
+    <h6 style="margin-top: 5%; font-weight: 500; margin-left: 40%;"><b>Your Financial Future Starts Here, </b><a href="#" style="color: red;">Start Your Account.</a></h6>
+<div class="E1">
+    
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+    <div class="vertical-text">MAKE AN </div>
+    <div class="form-container">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Enter your name here">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email address">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input type="tel" placeholder="Phone number">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="form1">
+            <div class="form-group">
+                <label for="Date">Date</label>
+                <input type="date" placeholder="Date">
+            </div>
+    
+            <div class="form-group">
+                <label for="Time">Time</label>
+                <input type="time" placeholder="Phone number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Address">Address</label>
+            <input type="tel" placeholder="Address">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <button class="btn"><span> <i class="fa-solid fa-arrow-right"></i>  Send Your Request</span></button>
+
+    </div>
+</div>
+<!--shraddha-->
+<div class="S1" style="background-color:white; background-image: url('https://azim.hostlin.com/Flexibank/assets/images/resource/men-2.png'); background-repeat:no-repeat;">
+    <div class="containerS">
+			   
+        <div class="header" style="background-color:maroon; height:65px; font-size:20px; color:gray; text-indent:30px; padding-top:20px;">
+           <span class="state"><b> Home Loan </b></span> &nbsp &nbsp &nbsp &nbsp|
+           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+           <span class="state"><b> Vehicle Loan </b></span> &nbsp &nbsp &nbsp &nbsp|
+           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+           <span class="state"><b> Personal Loan </b></span> &nbsp &nbsp &nbsp &nbsp|
+           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+           <span class="state"><b> Education Loan </b></span> &nbsp &nbsp &nbsp &nbsp|
+           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+           <span class="state"><b> Mortgage Loan </b></span>
+        </div>
+        
+        <div class="rowS" style="margin-top:30px;">
+        
+        <div class="col-sm-4 ">
+             <div style="color:red;"><b> - LOAN CALCULATOR </b></div> 
+             <h1 style="font-size:45px;"><b> Flexible </b><br><b> Online Loan </b><br><b> Calculator</b> </h1>
+             <p> Estimate your loan payments quickly & <br> easily with our calculator.</p>
+             <br>
+             <img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-31.png"> &nbsp &nbsp &nbsp <span style="font-size:20px;"> <b>Loan Questions? Check Our <a href="Faq’s.html" style="color:red;"> <div style="margin-left:47px;">Faq’s </a>  Page.</b></div> </span>
+             
+        </div>
+        <div class="col-sm-4 ">
+            <h6>Loan Amount &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $500000</h6>
+
+          <div class="itemS">
+              <label for="cap" style="margin-left:10px;">$50,000 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $2.5 million</label> <br>
+              <input type="range" name="capacity" id="cap" style="width:360px; margin-left:20px; margin-right:20px;"> 
+          </div>
+          <br>
+              <h6>Loan Term (Years) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 20</h6>
+          <div class="itemS">					 
+              <label for="cap" >20 Years  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 40 Years</label> <br>
+              <input type="range" name="capacity" id="cap" style="width:360px; margin-left:20px; ">  
+          </div>
+          <br>
+              <h6>Interest Rate &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 8.5%</h6>
+          <div class="itemS">
+              <label for="cap">6%  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 18%</label> <br>
+              <input type="range" name="capacity" id="cap" style="width:360px; margin-left:20px; margin-right:20px;"> 
+          </div>
+        <br>
+        </div>
+
+        <div class="col-sm-4" >
+        
+             <div style="width:350px; height:200px; border: 1px solid; background-color:brown;">
+              
+             <div style="text-align:center; color:white; margin-top:50px;"><h3>Monthly EMI </h3><h1> $4,340.00</h1>
+             
+            <img src="https://azim.hostlin.com/Flexibank/assets/images/icons/icon-32.png" class="demoS" >
+             </div>
+             
+             <button class="pageS"><a href=""> <div style="height:30px; width:200px;background-color:white; font-family:sans-serif; font-size:18px; padding-top:1px;">
+                         <b> → Apply Online </b>
+                      </div><a>
+             </button>
+             
+             </div>
+             
+             
+             <ul style="font-size:20px;">
+                 <li><b> Interest Amount </b></li>
+                 <li> $541,388 </li>
+                 <hr style="color:gray;">
+                 <li><b> Interest Amount </b></li>
+                 <li> $541,388 </li>
+             </ul>
+             
+             
+             
+             
+        </div>
+        
+
+        
+   </div>
+                     
+     </div>
+     
+     <div class="verticalS"><b> CALCULATION </b></div>
+     <footer class="footer">
+        <div class="content">
+            <div class="containerF">
+                <img src="footer.png"height="80px" width="300px">
+            </div>
+        <div class="containerF">
+            <div class="row">
+                <!-- Enquiry Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h6>Enquiry</h6>
+                    <ul class="footer-list">
+                        <li><b>0800 896 1234</b> (Toll Free)</li>
+                        <li>Personal</li>
+                        <li>+49 69 1234 5678</li>
+                        <li>Corporate</li>
+                    </ul>
+                    <div class="email-box">
+                        <img src="icon-3.png" alt="Email" class="icon"> 
+                        <a href="getsupport@flexibank.com"><b>getsupport@flexibank.com</b>      <i class="fa-solid fa-arrow-right"></i></a>
+                        <p class="query-text">Send your queries.</p>
+                    </div>
+                </div>
+    
+                <!-- Banking Hours Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h6>Banking Hours</h6>
+                    <ul class="footer-list">
+                        <li>9:00 AM to 5:00 PM</li>
+                        <li>Monday - Friday</li>
+                        <li>9:00 AM to 2:00 PM</li>
+                        <li>Saturday</li>
+                    </ul>
+                </div>
+    
+                <!-- Our Bank & Support Section -->
+                <div class="col-lg-3 col-md-6" style="border-left: 2px solid gray;">
+                    <h6>Our Bank</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Awards & Recognition</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">News & Media</a></li>
+                    </ul>
+                    <h6>Support</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Branches</a></li>
+                        <li><a href="#">ATMs</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Products Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h6>Products</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Accounts</a></li>
+                        <li><a href="#">Fixed Deposits</a></li>
+                        <li><a href="#">Credit Cards</a></li>
+                        <li><a href="#">Loans</a></li>
+                        <li><a href="#">Locker</a></li>
+                        <li><a href="#">Money Transfer</a></li>
+                        <li><a href="#">Investments</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <hr class="footer-divider">
+    
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <a href="#"><img src="a.png" alt="Branch Icon" class="icon"> Branches & ATMs</a>
+                <a href="#"><img src="b.png" alt="Complaint Icon" class="icon"> Complaints Registration</a>
+                <a href="#"><img src="c.png" alt="Download Icon" class="icon"> Download Forms</a>
+            </div>
+    
+            <!-- Social Media & Copyright -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="youtube (1).png" alt="YouTube"></a>
+                    <a href="#"><img src="link.png" alt="LinkedIn"></a>
+                </div>
+    
+                <div class="footer-logo">
+                    <img src="logo.png" alt="FlexiBank Logo">
+                </div>
+    
+                <div class="footer-policy">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms & Conditions</a>
+                </div>
+    
+                <p class="copyright">&copy; 2025 <span>FlexiBank.</span> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
