@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // global code 
 let x=20;//primitive(stack)
 
@@ -64,3 +65,15 @@ x=10;
  
 
 
+=======
+function add()
+{
+    var a=12;
+    var b=13;
+    var c=a+b;
+    console.log(c);
+}
+add();
+console.log("this is end of the code");
+add();//25
+>>>>>>> 8e92140a36a883ed0c6403298d6e11397cad675b
