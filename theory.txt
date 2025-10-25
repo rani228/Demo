@@ -1,0 +1,72 @@
+Datatypes in js:
+Data is the information on which we need to implement business logic to get the desired output.
+
+to perform any operation on the datatbase need to understand the data type.   
+
+typeof :operator used  to identifer  the type ofdata.
+
+
+types:
+there are two types of the data
+1.primitive data type
+2.Non primitive data type
+
+1. primitive data type:
+-
+ -Abitity to store a single  value
+-Data will be store in stack memory directly
+-once data has been created in memoryit.
+-it is not to possible to change. it will is created a new memory locationto store the data.  
+-so value of variable will be changed
+
+-once created is called an immutability(fixed)
+
+types of primitive  data type
+number
+
+string =>denoted as '',"",''etc
+Boolean
+null
+undefined
+symbol(ES6)
+
+
+Boolean: boolean data values can be represent with true or false.
+null:null is special value give to any vaiable.
+
+2.Non primitive data type:
+-Ability to store multiple value
+-Data will be store in the heap memory with the help of reference from stack memory
+-once data is been create in memory
+-the data will be shared to another variavle also,
+-once value is created it is possible to change
+-it is called as mutability
+
+type of non primitive
+Array
+
+Array is collection/combination of similar typeof or different datatype value(element).
+suppose example
+var a=[1,2,3,4];=>Array to number
+var a=['a,'b'];=>Array of string
+var arrayboolean=[true,false]=>Array of boolean
+var arrauNull=[null,null];=>Array of null
+var multipletypes=['1','2',3',null,'undefined'];
+
+object
+object:object are the collection of key value pair{key:value}
+var numbers={
+key1: value1',
+key2: value2',
+key3: value3',
+key4: value4',
+key5: value5',
+} 
+
+
+
+
+
+
+
+
