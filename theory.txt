@@ -1,0 +1,95 @@
+oops(Object oriented programming language like c,c++,java etc)
+1.class:A blueprint for creating object with shared properties &methods that is also 
+called as class.
+2.object:An instance of a class that represents the specific entity.
+3.Encapsulation:
+multilevel inheritance:
+method overiding
+method overloading.
+
+DAY=> 43
+
+point1
+function excution
+
+global excution context
+callstack
+stack memory
+heap memory
+
+
+
+global excution context
+-when js code starts it's create the global execution context
+context has:
+memory phase:
+creation->variables &functions are allocated memory
+excution phase:code runs line by line
+-only one GEC exists for the whole program.
+
+
+
+
+callstack
+-works onLIFO (last in fast out) it's keep track of exution.
+-each function call create a new excution context &it is pushed in the stack.
+-function excution finished,it's context is popped out from stack.
+
+
+stack memory
+stores primitive values (number,string,boolean ,undefined,null,symbol,bigint &execution context)
+
+heap memory:
+stores object,function &refer type(object,array,function)
+
+point 2
+
+d=10;
+let a=[];//array a reference
+a=AreferenceID
+AreferenceID=#abs
+js engine global excution context
+create reference id for each object variables
+b=BreferenceID=#2345;//to diffierent reference in each variables
+let b=[];//array//array only comparision in shallow comparision
+a==b? false
+['a','b']==['a','b','c']?//deep comparision which is not in js
+a[0]==b[0]=true
+a.length==b.length ? false
+{}=={}
+value===value//shallow comparision//one value comparision in shallow copy 
+point 3
+
+
+
+// function can be stoward in heap memory//function type as function
+// All below events used to handle theda or action mostly without formate or library
+// 1.Event Bubbling or Event Propagation
+// The event start from target (child)element &propagets to the parent elements
+
+// or
+// 1. Event Bubbling:the event starts from target element(child) and 
+//     bubbles to it's parent
+to print
+        output
+        child element 
+         parent element 
+
+         output 
+         bottom to top  
+         print in console
+
+2.Event capturing or event Trickling
+The events start from parent element or root element &propagets to the child
+elementor target element
+or 
+similar as bubbling event  but propagets parent ->to child event
+output
+parent is clicked
+child is clicked
+
+3.Event delegation
+-Insted of attaching event listener to multiple child elements
+-at Each single event listener on parent and handle event target
+-less code improve performance
+-no need to attach listeners on each child node.

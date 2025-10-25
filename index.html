@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Event Bubbling or Event Propagation:</h1>
+<div id="parent">
+    <div id="child">
+        <button id="child">click me</button>
+    </div>
+</div>
+<script>
+document.getElementById('parent').addEventListener('click',()=>{
+    console.log('parent Event');
+})
+document.getElementById('child').addEventListener('click',()=>{
+    console.log('Child Event');
+})///Child Event
+// index.html:17 parent Event
+
+
+</script>
+</body>
+</html>
