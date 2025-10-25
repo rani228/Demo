@@ -1,0 +1,29 @@
+1.what is mean by javascript?
+=>JavaScript is programming language that allows you to create interaction, dynamic behaviour on website.
+javascript is high level language.
+javascript is an interpreter ,client side /Event based /object oriented scripting language.
+
+1] defination :javascript=>
+javascript is a single thread syncronous dynamic typed partial object oriented client side scripting language   used to 
+static as well as dynamic web application.
+
+i]single thread=>It means only one piece of code runs at a time in a single thread.
+//programming language:Any language is used to perform operation on the data
+ii]synchronous: which can handle single thing at a time is called as synchronous/one after another
+
+iii]dynamically typed:
+a=10;
+a=12;
+a="hello"
+
+
+iv]During the execution of programming can change the data ordata type.
+
+v]Client side : client side the give the information to the client (end user)  by using UI
+vi]software industrythere aretwo types 
+1]Scripting language
+2]programming language
+
+programm to run program :
+compilation=>converting our understandable code in to machine language.
+execution=>to exuted the computation
