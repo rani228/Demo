@@ -1,0 +1,208 @@
+<<<<<<< HEAD
+Datatypes in js:
+Data is the information on which we need to implement business logic to get the desired output.
+
+to perform any operation on the datatbase need to understand the data type.   
+
+typeof :operator used  to identifer  the type ofdata.
+
+
+types:
+there are two types of the data
+1.primitive data type
+2.Non primitive data type
+
+1. primitive data type:
+-
+ -Abitity to store a single  value
+-Data will be store in stack memory directly
+-once data has been created in memoryit.
+-it is not to possible to change. it will is created a new memory locationto store the data.  
+-so value of variable will be changed
+
+-once created is called an immutability(fixed)
+
+=======
+<<<<<<< HEAD
+1.what is mean by javascript?
+=>JavaScript is programming language that allows you to create interaction, dynamic behaviour on website.
+javascript is high level language.
+javascript is an interpreter ,client side /Event based /object oriented scripting language.
+
+1] defination :javascript=>
+javascript is a single thread syncronous dynamic typed partial object oriented client side scripting language   used to 
+static as well as dynamic web application.
+
+i]single thread=>It means only one piece of code runs at a time in a single thread.
+//programming language:Any language is used to perform operation on the data
+ii]synchronous: which can handle single thing at a time is called as synchronous/one after another
+
+iii]dynamically typed:
+a=10;
+a=12;
+a="hello"
+
+
+iv]During the execution of programming can change the data ordata type.
+
+v]Client side : client side the give the information to the client (end user)  by using UI
+vi]software industrythere aretwo types 
+1]Scripting language
+2]programming language
+
+programm to run program :
+compilation=>converting our understandable code in to machine language.
+execution=>to exuted the computation
+=======
+datatype
+data is the information on which we need to implement in bussiness logic to get  the desired
+output.
+ex var a=10;
+var b=20;
+var c=a+b;
+console.log(c);
+to perform any operation  on the database need to understand the datatype
+typeof operation user the identifer the typeof data
+their are two types of datatype 
+1.primitive datatypes/built in datatype
+2.non primitive datatype/ derived datatype
+\
+1.primitive datatypes/built in datatype
+//-abilityto  stoward the data single value
+ Always thestoward the data in stack memory directly
+ a=10;
+
+-once data has been created in the memory
+--it is not to possible to change. it will is created a new memory locationto store the data.  
+-so valueof variable will be changed
+
+//always follow in LIFO (LAST IN FIRST OUT)
+once created is called as immutability(fixed)
+2 byte=>16 byte
+-used for simple operation
+>>>>>>> 2ddf259820ee694d2b71d8316f7f6b046430ad3e
+types of primitive  data type
+number
+
+string =>denoted as '',"",''etc
+Boolean
+null
+undefined
+symbol(ES6)
+<<<<<<< HEAD
+
+
+Boolean: boolean data values can be represent with true or false.
+null:null is special value give to any vaiable.
+
+2.Non primitive data type:
+-Ability to store multiple value
+-Data will be store in the heap memory with the help of reference from stack memory
+-once data is been create in memory
+-the data will be shared to another variavle also,
+-once value is created it is possible to change
+-it is called as mutability
+=======
+in this all datatype not share the value in other variable/to work in LIFO Manner
+
+
+
+Boolean: boolean data values can be represent with true or false.
+null:null is special value give to any vaiable beacuse it is datatype is object
+
+
+Non Primitive datatype/derived datatype:
+-ability to stoward the multiple value
+-once data will be store in heap memory with the refernce from stack memory 
+-once data is been create in memory
+once datawill be shared to another variable or sharing the
+-it is not fixed size(daynamicaly to change)
+-used for complex operation
+-Always follow LIFO manner to perform the operation.
+-it is called mutability.
+>>>>>>> 2ddf259820ee694d2b71d8316f7f6b046430ad3e
+
+type of non primitive
+Array
+
+Array is collection/combination of similar typeof or different datatype value(element).
+suppose example
+var a=[1,2,3,4];=>Array to number
+var a=['a,'b'];=>Array of string
+var arrayboolean=[true,false]=>Array of boolean
+var arrauNull=[null,null];=>Array of null
+var multipletypes=['1','2',3',null,'undefined'];
+
+object
+object:object are the collection of key value pair{key:value}
+var numbers={
+key1: value1',
+key2: value2',
+key3: value3',
+key4: value4',
+key5: value5',
+<<<<<<< HEAD
+} 
+
+
+
+
+
+
+
+
+=======
+}
+
+(suppose to write the code in stack and heap which code first excuting =>first stack)
+VIMP*******
+Falsy value=>0,false,undefined,null,empty ,string
+truth value => afat form this
+null isthis valuenotfalsy or truth 
+ex
+// var  ss=null;
+// if(ss){
+// console.log('hello');
+// }//blank space =>null
+(ee!=0&ee!=undefined&&ee!=false&&ee!=null)
+
+
+//4 point
+
+string method
+string property
+length
+typeof
+method
+valueof
+charAt
+charCodeAt
+toUpperCase
+toLowerCase
+replace
+replaceAll
+split
+includes
+indexOf
+LastIndexOf
+at
+slice
+search
+repeate
+trim
+trimStart
+trimEnd
+padStart
+padEnd
+substr
+subString
+startsWith
+endsWith
+match
+concatenation
+matchAll
+parseInt
+
+
+>>>>>>> 5ff5721f22e94a2a3c32e70d3ef779a53f070b8f
+>>>>>>> 2ddf259820ee694d2b71d8316f7f6b046430ad3e
