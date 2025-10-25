@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.what is mean by javascript?
 =>JavaScript is programming language that allows you to create interaction, dynamic behaviour on website.
 javascript is high level language.
@@ -27,3 +28,128 @@ vi]software industrythere aretwo types
 programm to run program :
 compilation=>converting our understandable code in to machine language.
 execution=>to exuted the computation
+=======
+datatype
+data is the information on which we need to implement in bussiness logic to get  the desired
+output.
+ex var a=10;
+var b=20;
+var c=a+b;
+console.log(c);
+to perform any operation  on the database need to understand the datatype
+typeof operation user the identifer the typeof data
+their are two types of datatype 
+1.primitive datatypes/built in datatype
+2.non primitive datatype/ derived datatype
+\
+1.primitive datatypes/built in datatype
+//-abilityto  stoward the data single value
+ Always thestoward the data in stack memory directly
+ a=10;
+
+-once data has been created in the memory
+--it is not to possible to change. it will is created a new memory locationto store the data.  
+-so valueof variable will be changed
+
+//always follow in LIFO (LAST IN FIRST OUT)
+once created is called as immutability(fixed)
+2 byte=>16 byte
+-used for simple operation
+types of primitive  data type
+number
+
+string =>denoted as '',"",''etc
+Boolean
+null
+undefined
+symbol(ES6)
+in this all datatype not share the value in other variable/to work in LIFO Manner
+
+
+
+Boolean: boolean data values can be represent with true or false.
+null:null is special value give to any vaiable beacuse it is datatype is object
+
+
+Non Primitive datatype/derived datatype:
+-ability to stoward the multiple value
+-once data will be store in heap memory with the refernce from stack memory 
+-once data is been create in memory
+once datawill be shared to another variable or sharing the
+-it is not fixed size(daynamicaly to change)
+-used for complex operation
+-Always follow LIFO manner to perform the operation.
+-it is called mutability.
+
+type of non primitive
+Array
+
+Array is collection/combination of similar typeof or different datatype value(element).
+suppose example
+var a=[1,2,3,4];=>Array to number
+var a=['a,'b'];=>Array of string
+var arrayboolean=[true,false]=>Array of boolean
+var arrauNull=[null,null];=>Array of null
+var multipletypes=['1','2',3',null,'undefined'];
+
+object
+object:object are the collection of key value pair{key:value}
+var numbers={
+key1: value1',
+key2: value2',
+key3: value3',
+key4: value4',
+key5: value5',
+}
+
+(suppose to write the code in stack and heap which code first excuting =>first stack)
+VIMP*******
+Falsy value=>0,false,undefined,null,empty ,string
+truth value => afat form this
+null isthis valuenotfalsy or truth 
+ex
+// var  ss=null;
+// if(ss){
+// console.log('hello');
+// }//blank space =>null
+(ee!=0&ee!=undefined&&ee!=false&&ee!=null)
+
+
+//4 point
+
+string method
+string property
+length
+typeof
+method
+valueof
+charAt
+charCodeAt
+toUpperCase
+toLowerCase
+replace
+replaceAll
+split
+includes
+indexOf
+LastIndexOf
+at
+slice
+search
+repeate
+trim
+trimStart
+trimEnd
+padStart
+padEnd
+substr
+subString
+startsWith
+endsWith
+match
+concatenation
+matchAll
+parseInt
+
+
+>>>>>>> 5ff5721f22e94a2a3c32e70d3ef779a53f070b8f
