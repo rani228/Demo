@@ -1,0 +1,10 @@
+observable:
+ An observable is an  object that emits (push/send )a stream of data.
+(I am not understand=>crack bell)
+-youtube example
+1.channel=observable(it produce new video)
+2.the subscriber=observer(they receive video)
+3.the subscription=connection between them.
+-observable data produces then will be send intermetion
+//producer=>to produces(to send the video)
+subscriber=>listen(receive the data/video(observable=>listen))
