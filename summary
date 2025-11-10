@@ -1,0 +1,23 @@
+// function:function are basically a block of code to perform any operation in a block of code. .
+// function are used to  for in reusability purpose.
+//function are also used to break our entire program into small parts of program so that we can run individually.
+There are two types function:
+1. Built in function
+2. User Defined Function
+Built in function:The function which are provided bylanguage or javascript it self is called as built function.
+ 2.user defined function :the function has been created  by developer toperform thr operation is user is also called as user defined function.
+ eg:login process
+
+
+ function syntax:
+ function functionName(){
+    //block of code which need to execute
+ }functionName(); 
+  
+  .there are two types of user defined function based  on parameterized  or argument
+  1.parametrized function:
+ the parametrized function  which accepts  the argument or parametrized while defining and calling the function.
+ 2. Non parametrized function:
+ the Nonprametrized function  which will not accepts argument or parameterwhile defining ,calling and proccesing  the function.
+
+
