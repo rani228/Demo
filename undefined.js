@@ -1,0 +1,11 @@
+// var a; 
+// let b=12;
+// console.log(a);
+// console.log(typeof a);
+// console.log(b);
+// console.log(typeof b);
+// console.log(typeof undefined);
+// var a;
+// console.log(typeof a);
+var a;
+console.log(typeof a);
