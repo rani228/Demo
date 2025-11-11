@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video play/pause using observable</title>
+  <script src="https://unpkg.com/rxjs@7.8.0/dist/bundles/rxjs.umd.min.js"></script>
+</head>
+<body>
+  <video id="myVideo" width="480" controls>
+    <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
+    Your browser does not support HTML5 video.
+  </video>
+
+  <script>
+    const { timer } = rxjs;
+    const { switchMap, takeUntil } = rxjs.operators;
+
+    const video = document.getElementById("myVideo");
+
+    // एक observable जी प्रत्येक 1 मिनिटानंतर toggle करेल play / pause
+    const toggle$ = timer(0, 60 * 1000)  // 0 ms पासून सुरुवात, नंतर दर 60000 ms (1 मिनिट) ने
+      .pipe(
+        // प्रत्येक timer tick वर function करणे
+        switchMap(count => {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+          return [];  // काही values emit न करता
+        })
+      );
+
+    const subscription = toggle$.subscribe();
+
+    // नंतर एखाद्या वेळेस आपण subscription.unsubscribe() करून तो observable थांबवू शकतो
+  </script>
+</body>
+</html>
