@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-nav{
+    display: flex;
+   justify-content: space-between;
+   font-size: 17px;
+   background-color: aliceblue;
+   padding: 1rem;
+   height: 10vh;
+   margin-left: 6%;
+   margin-right: 6%;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+    background-size: cover;
+    cursor: pointer;
+}
+.nav2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 .second{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem; 
+    cursor: pointer;
+}
+.nav1:hover{
+    color:brown;
+}
+.second-nav{
+    position:sticky;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+    z-index: 3;
+}
+.second-nav:hover{
+    cursor: pointer;
+}
+.nav3 .n3{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.n3 li a{
+    color: black;
+    text-decoration: none;
+  }
+  .n3 li a:hover{
+    cursor: pointer;
+    color: #521919;
+  }
+.n4{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem; 
+}
+.dropdown form{
+    width: 27vw;
+    height: 44vh;
+    align-items: center;
+    padding: 3rem;
+}
+form .mb-3 .radio1{
+    margin-bottom: 10%;
+}
+form .mb-3 .form-control{
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+form p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+form p:hover{
+    color: brown;
+    cursor: pointer;
+}
+form  p i{
+ color: brown;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    .dropdown-content a:hover {
+        background-color: #883333;
+        color: white;
+    }
+  .home:hover .dropdown-content {display: block;}
+  .dropdown-content1 {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 a:hover {
+    background-color: #883333;
+    color: white;}
+.home:hover .dropdown-content1 {display: block;}
+  .n3 li:hover{
+    color: brown;
+  }
+  .nav2 .second li:hover{
+    color: brown;
+  }
+  .submenu {
+    position: relative;
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu:hover .sub-dropdown {
+    display: block;
+}
+
+  .bg{
+    background: brown url('page-title.jpg') no-repeat center;
+    opacity: 0.8px;
+    background-size: cover;
+    width: 99vw;
+    height: 50vh;
+    color: white;
+    opacity: 0.8px;
+  }
+  .background {
+    position: relative; 
+    width: 99%;
+    height: 50vh; 
+    background: url('page-title.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.7); 
+}
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 2rem;
+}
+.content2 h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: white; 
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.content2 p {
+    font-size: 23px;
+    color: white; 
+    justify-content: flex-end;
+    align-self: flex-end; 
+}
+.qAndA {
+    width: 100%;
+    padding: 113px 0px 120px 0px;
+    background: #f5f4f4 !important;
+}
+
+.qflexA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    color: #e22026;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.header1 {
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 48px;
+}
+
+.qaMainDiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.leftDivA {
+    background-color: white;
+
+    flex: 2.5;
+    padding: 43px 30px 44px 30px;
+}
+
+.rightDivA {
+    background-color: white;
+
+    flex: 6;
+}
+
+.leftHedingA {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+.leftParaA {
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 32px;
+    font-size: large;
+}
+
+.listclassA {
+    list-style: none;
+    padding: 0%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e6e4e4;
+    margin-bottom: 25px;
+}
+
+.commonListA {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #e6e4e4;
+    padding: 8px 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.commonListA:hover {
+    background-color: #e22026;
+}
+
+.commonListA:hover > a {
+    color: #fff !important;
+}
+
+.commonListA > a {
+    text-decoration: none;
+    color: #545151;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.flexDiv2A {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.accordion {
+    background: #f5f4f4 !important;
+}
+.accordion-body {
+    padding: 25px 20px;
+}
+.accordion-item {
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+}
+
+.accordion-button {
+    background-color: white;
+    border: none !important;
+    outline: none !important;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #550401;
+    color: white;
+}
+
+.accordion-button > span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5f4f4;
+    font-weight: 600;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.accordion-button:not(.collapsed) > span {
+    background-color: white;
+    color: #e22026;
+}
+
+@media (max-width: 900px) {
+    .qaMainDiv {
+        flex-direction: column;
+    }
+}
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: red;
+}
+
+.email-box {
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+}
+.email-box a{
+    color: black;
+    text-decoration: none;
+}
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.query-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 15px 0;
+  border-top: 1px solid #ddd; /* Optional separator */
+}
+
+.social-icons a img {
+  width: 24px; /* Adjust size */
+  margin: 0 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  opacity: 0.7;
+}
+
+.footer-logo img {
+  width: 150px; /* Adjust logo size */
+}
+
+.footer-policy {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-policy a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-policy a:hover {
+  color: red;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+</style>
+<body>
+     <div class="first-nav">
+        <div class="nav1">
+            <div class="looking">
+             <div class="dropdown">
+                 <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(203, 56, 56); color: white;"><img src="icon-1.png">
+                   Looking: Personal
+                 </button>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Personal</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 2</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 3</a></li>
+                   <li><a class="dropdown-item" href="#">Personal 4</a></li>
+                 </ul>
+               </div>
+            </div>
+               <div class="login">
+                 <div class="dropdown">
+                     <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-2.png">
+                      Login
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Login</a></li>
+                       <li><a class="dropdown-item" href="#">LogOut</a></li>
+                       <li><a class="dropdown-item" href="#">SignUp</a></li>
+                     </ul>
+                   </div>
+               </div>
+               <div class="mail">
+                 <p> <img src="icon-3.png">getSupport@example.com</p>
+               </div>
+         </div>
+         <div class="nav2">
+            
+                <ul class="second">
+                    <li><a href="career.html"><img src="icon-4.png">Careers</a></li>
+                    <li><a href="faq.html">Faq's</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Reward</a></li>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="icon-5.png">
+                         Us-En
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Us-En</a></li>
+                          <li><a class="dropdown-item" href="#">Uk-En</a></li>
+                          <li><a class="dropdown-item" href="#">Canada-En</a></li>
+                          <li><a class="dropdown-item" href="#">France-Fr</a></li>
+                          <li><a class="dropdown-item" href="#">Italy-It</a></li>
+                          <li><a class="dropdown-item" href="#">Turky-Tu</a></li>
+                        </ul>
+                      </div>
+                </ul>
+         </div>
+    </div>
+    <div class="second-nav">
+      <div class="nav3">
+          <ul class="n3" style="list-style-type: none;">
+              <li><img src="logo.png"></li>
+  
+              <li class="home">Home <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="home.html">Home Page 01</a></li>
+                      <li><a href="#">Home Page 02</a></li>
+                      <li><a href="#">Home Page 03</a></li>
+                      <li><a href="#">Home Page 04</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Service <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content"style="list-style-type: none;">
+                      <li class="submenu">
+                          <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="Account.html">All Accounts</a></li>
+                              <li><a href="#">Savings Account</a></li>
+                              <li><a href="#">Current Account</a></li>
+                              <li><a href="#">Family 360</a></li>
+                              <li><a href="#">Senior Citizen</a></li>
+                              <li><a href="#">Demat Account</a></li>
+                              <li><a href="#">Business Account</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#">Investment <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sub-dropdown">
+                            <li><a href="tradeFx.html">Trade FX</a></li>
+                            <li><a href="#">Multi Currency A/C</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Insurence</a></li>
+                            <li><a href="#">Tax-Deferred-Investment</a></li>
+                            <li><a href="#">Investment Advisory</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#">Accounts <i class="fa-solid fa-angle-right"></i></a>
+                      <ul class="sub-dropdown">
+                         <li><a href="#">All Cards</a></li>
+                         <li><a href="#">Platinum Cards</a></li>
+                         <li><a href="#">Millinnia Card</a></li>
+                         <li><a href="#">Money Back Card</a></li>
+                         <li><a href="#">Easy EMI Card</a></li>
+                         <li><a href="#">Dinners Club Privilege</a></li>
+                         <li><a href="#">Titanium Times</a></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </li>
+  
+              <li class="home">About <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="aboutUs.html">About Us</a></li>
+                      <li class="submenu"><a href="#">Leadership <i class="fa-solid fa-angle-right"></i></a>
+                          <ul class="sub-dropdown">
+                              <li><a href="leadership.html">Leadership</a></li>
+                              <li><a href="leadershipDetails.html">Leadership Details</a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu"><a href="#">Careers</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="career.html">Careers</a></li>
+                          <li><a href="careerDetailas.html">Careers Details</a></li>
+                      </ul></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                      <li><a href="404.html">404</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">News <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li><a href="gridView01.html">Grid View 01</a></li>
+                      <li><a href="#">Grid View 02</a></li>
+                      <li><a href="#">List View 01</a></li>
+                      <li><a href="#">List View 02</a></li>
+                      <li><a href="#">Single Post</a></li>
+                  </ul>
+              </li>
+  
+              <li class="home">Apply Now <i class="fa-solid fa-angle-right"></i>
+                  <ul class="dropdown-content" style="list-style-type: none;">
+                      <li class="submenu"><a href="#">Loans</a>
+                      <ul class="sub-dropdown">
+                          <li><a href="applynow.html">Home Loan</a></li>
+                          <li><a href="#">Personal Loan</a></li>
+                          <li><a href="#">Vehicle Loan</a></li>
+                          <li><a href="#">Education Loan</a></li>
+                          <li><a href="#">Gold Loan</a></li>
+                      </ul>
+                      <li><a href="#">Credit Card</a></li>
+                      <li><a href="#">Debit Card</a></li>
+                  </ul>
+              </li>
+  
+              <li><a href="getInTouch.html">Get in touch</a></li>
+          </ul>
+      </div>
+      <div class="nav4">
+        <ul class="n4">
+          <li>Search <img src="icon-7.png"></li>
+          <li style=":hover{color: brown;}"><img src="icon-8.png"> Support</li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+               <img src="icon-10.png">
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <div class="radio1">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Bransches</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">ATM's</label><br>
+                  </div>
+                <div class="mb-3" style="margin-bottom: 5%;">
+                  <input type="text" class="form-control" placeholder="Current Loaction">
+                  [or]
+                  <input type="text" class="form-control" placeholder="City name: Pune">
+                </div>
+                <p><i class="fa-solid fa-arrow-right"></i>   Find On Map</p>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="content2">
+        <h1>Faq's</h1>
+        <p>Home > About > Faq's</p>
+    </div>
+</div>
+<section class="qAndA">
+    <div class="qflexA">
+        <img
+            src="Locker_Icon.png"
+            alt=""
+            style="display: block"
+        />
+        <p style="margin: 0%">faq’s</p>
+    </div>
+    <h1 class="header1">Read Questions & Answers</h1>
+    <div class="qaMainDiv">
+        <div class="leftDivA">
+            <h2 class="leftHedingA">Categories</h2>
+            <p class="leftParaA">
+                Wide range of topics to address common queries.
+            </p>
+            <ul class="listclassA">
+                <li class="commonListA">
+                    <a href="">Account</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Online Banking</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Mobile Banking</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Deposits</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Withdrawals</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Loans</a>
+                </li>
+                <li class="commonListA">
+                    <a href="">Business</a>
+                </li>
+            </ul>
+            <div>
+                <div class="flexDiv2A">
+                    <img
+                        src="Mail_Icon.png"
+                        alt=""
+                        style="display: block"
+                    />
+
+                    <div>
+                        <p
+                            style="
+                                margin: 0%;
+                                font-size: 18px;
+                                line-height: 26px;
+                                margin-bottom: 4px;
+                                font-weight: 600;
+                            "
+                        >
+                            Can't Find What You Need?
+                        </p>
+                        <img src="Arrow_Icon.png" alt="" />
+                        <span
+                            style="
+                                font-size: 18px;
+                                line-height: 24px;
+                                margin-bottom: 4px;
+                                font-weight: 600;
+                            "
+                        >
+                            <a
+                                href=""
+                                style="
+                                    text-decoration: none;
+                                    color: black;
+                                "
+                                >Submit Queries</a
+                            ></span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightDivA">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                        >
+                            <span>01</span>
+                            How do I open a new account?
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Repudiated and annoyances accepted the wise
+                            man therefore always holds in these matters
+                            to this principle selection he rejects
+                            pleasures to secures.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                            <span>02</span>
+                            How can I check my account balance?
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Repudiated and annoyances accepted the wise
+                            man therefore always holds in these matters
+                            to this principle selection he rejects
+                            pleasures to secures.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >
+                            <span>03</span>
+                            Is online banking secure?
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Repudiated and annoyances accepted the wise
+                            man therefore always holds in these matters
+                            to this principle selection he rejects
+                            pleasures to secures.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                        >
+                            <span>04</span>
+                            What is the daily ATM withdrawal limit?
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Repudiated and annoyances accepted the wise
+                            man therefore always holds in these matters
+                            to this principle selection he rejects
+                            pleasures to secures.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                        >
+                            <span>05</span>
+                            How do I apply for a loan?
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Repudiated and annoyances accepted the wise
+                            man therefore always holds in these matters
+                            to this principle selection he rejects
+                            pleasures to secures.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="content">
+        <div class="container">
+            <img src="footer.png"height="80px" width="300px">
+        </div>
+    <div class="container">
+        <div class="row">
+            <!-- Enquiry Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Enquiry</h6>
+                <ul class="footer-list">
+                    <li><b>0800 896 1234</b> (Toll Free)</li>
+                    <li>Personal</li>
+                    <li>+49 69 1234 5678</li>
+                    <li>Corporate</li>
+                </ul>
+                <div class="email-box">
+                    <img src="icon-3.png" alt="Email" class="icon"> 
+                    <a href="getsupport@flexibank.com"><b>getsupport@flexibank.com</b>      <i class="fa-solid fa-arrow-right"></i></a>
+                    <p class="query-text">Send your queries.</p>
+                </div>
+            </div>
+
+            <!-- Banking Hours Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Banking Hours</h6>
+                <ul class="footer-list">
+                    <li>9:00 AM to 5:00 PM</li>
+                    <li>Monday - Friday</li>
+                    <li>9:00 AM to 2:00 PM</li>
+                    <li>Saturday</li>
+                </ul>
+            </div>
+
+            <!-- Our Bank & Support Section -->
+            <div class="col-lg-3 col-md-6" style="border-left: 2px solid gray;">
+                <h6>Our Bank</h6>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Awards & Recognition</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">News & Media</a></li>
+                </ul>
+                <h6>Support</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Branches</a></li>
+                    <li><a href="#">ATMs</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products Section -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Products</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Fixed Deposits</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                    <li><a href="#">Loans</a></li>
+                    <li><a href="#">Locker</a></li>
+                    <li><a href="#">Money Transfer</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <a href="#"><img src="a.png" alt="Branch Icon" class="icon"> Branches & ATMs</a>
+            <a href="#"><img src="b.png" alt="Complaint Icon" class="icon"> Complaints Registration</a>
+            <a href="#"><img src="c.png" alt="Download Icon" class="icon"> Download Forms</a>
+        </div>
+
+        <!-- Social Media & Copyright -->
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="insta.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube (1).png" alt="YouTube"></a>
+                <a href="#"><img src="link.png" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-logo">
+                <img src="logo.png" alt="FlexiBank Logo">
+            </div>
+
+            <div class="footer-policy">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <p class="copyright">&copy; 2025 <span>FlexiBank.</span> All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

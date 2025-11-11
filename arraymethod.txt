@@ -1,0 +1,22 @@
+//array is a data structure that stores an value,
+ that is known as element, 
+that are stored at specific length of array it
+ starts from 1 
+//array is collection  of similar or different
+ datatype 
+methods of array
+1.length 
+2.typeof 
+3.push
+4.pop
+5.unshift
+6.shift
+7.concat
+
+8.include
+9.Reverse
+10.toString
+11.sort
+12.join
+13.index of
+14.lastindexof
