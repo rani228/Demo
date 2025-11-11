@@ -1,0 +1,34 @@
+// function->Reusability
+// 1. add benefitiary
+//2.verify the benefitiary
+//3.sending the amount to next person
+//ex1:
+
+//var fullName="Alex Simi";
+//var accountNumber="54565656565";
+//var IFSC code:"SBIN0000145";
+//add behefiary process
+//start
+//block of you
+//end
+
+
+//ex2:=>Binding the code to perform the operation
+//var StudName="manic";
+//var StudentAge="18";
+//var StudentClass="first";
+//var StudentGender="male";
+
+
+//var StaffName="maths";
+//var staffAge="35";
+//let StaffGender="male";
+//ex3:
+// =>:
+//breaking the entire code in to small part of code
+// login to SBI application
+//login process=>will take 200 lines of code which is very difficult to understand
+//so we need to break the code into multiple pieces. 
+
+
+
