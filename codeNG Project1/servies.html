@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            outline: none;
+        }
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            display: block;
+            unicode-bidi: isolate;
+        }
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+        .banking{
+            position: relative;
+        }
+        .bg-color-1 {
+            background: #f5f4f4 !important;
+        }
+        .sec-pad {
+            padding: 113px 0px 120px 0px;
+        }
+        .banking .pattern-layer {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: calc(100% - 240px);
+            background-image: url(assets/shapes/shape-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .container {
+            position: static;
+            max-width: 1200px;
+            padding: 0px 15px 0px 15px;
+            margin: 0px auto 0px auto; 
+        }
+        .banking .title-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin-bottom: 48px;
+        }
+        .sec-title {
+            position: relative;
+            display: block;
+            margin-bottom: 48px;
+        }
+        .sec-title .sub-title {
+            position: relative;
+            display: inline-block;
+            font-size: 15px;
+            line-height: 24px;
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #e22026;
+            padding-left: 30px;
+            margin-bottom: 12px;
+        }
+        .sec-title h2 {
+            display: block;
+            font-size: 48px;
+            line-height: 56px;
+            position: relative;
+            font-family:"Hanken Grotesk", sans-serif;
+            font-weight: 700;
+        }
+        .sec-title .sub-title:before {
+            position: absolute;
+            content: '';
+            background: #e22026;
+            width: 3px;
+            height: 6px;
+            left: 0px;
+            top: 9px;
+        }
+        .sec-title .sub-title:after {
+            position: absolute;
+            content: '';
+            background: #e22026;
+            width: 15px;
+            height: 6px;
+            left: 5px;
+            top: 9px;
+        }
+        .sec-title.light h2 {
+            color: #fff;
+        }
+        .banking .title-box .support-box {
+            position: relative;
+            padding-left: 30px;
+        }
+        .banking .title-box .support-box:before {
+            position: absolute;
+            content: '';
+            background: #fff;
+            width: 1px;
+            height: 74px;
+            left: 0px;
+            top: 5px;
+            opacity: 0.15;
+        }
+        .banking .title-box .support-box h5 {
+            display: block;
+            font-size: 18px;
+            line-height: 26px;
+            color: #fff;
+            opacity: 0.5;
+            margin-bottom: 8px;
+        }
+        .banking .title-box .support-box .phone-box {
+            position: relative;
+            display: block;
+            padding-left: 38px;
+        }
+
+        .banking .title-box .support-box .phone-box .icon-box {
+            position: absolute;
+            left: 0px;
+        }
+        .banking .title-box .support-box .phone-box a {
+            position: relative;
+            display: inline-block;
+            font-size: 24px;
+            line-height: 30px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .banking .title-box .support-box .phone-box span {
+            position: relative;
+            display: block;
+            color: #fff;
+            opacity: 0.5;
+        }
+        .banking .tabs-box {
+            position: relative;
+            background: #f5f4f4;
+            margin-left: 40px;
+        }
+        
+        .banking .tabs-box:before {
+            position: absolute;
+            content: '';
+            background: #f5f4f4;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .banking .tabs-box .support-image {
+            position: absolute;
+            right: 0px;
+            top: -162px;
+            
+        }
+        figure {
+            margin: 0px;
+        }
+        .banking .tabs-box .tab-btn-one {
+            position: absolute;
+            left: -40px;
+            top: 0px;
+            width: 40px;
+            writing-mode: vertical-lr;
+            background: #f5f4f4;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+        .banking .tabs-box .tab-btn-one .tab-btns {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        ul, li {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        li {
+            display: list-item;
+            unicode-bidi: isolate;
+        }
+
+        .banking .tabs-box .tab-btn-one .tab-btns li {
+            position: relative;
+            display: inline-block;
+            font-size: 15px;
+            line-height: 24px;
+            font-family: "Hanken Grotesk", sans-serif;
+            color: #a8a7a7;
+            background: #f5f4f4;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 26px 8px 26px 8px;
+        }
+        .banking .tabs-box .tab-btn-one .tab-btns li:hover {
+            background: #e22026;
+            color: #fff;
+        }
+        .tabs-box .tab {
+            transform: scale(0.9, 0.9) translateY(0px);
+        }
+        .row {
+            --bs-gutter-x: 30px;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1* var(--bs-gutter-y));
+            margin-right: calc(-0.5* var(--bs-gutter-x));
+            margin-left: calc(-0.5* var(--bs-gutter-x));
+        }
+        /* @media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+} */
+        /* @media (min-width: 992px) {
+            .col-lg-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-md-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        @media (min-width: 576px) {
+            .col-sm-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        } */
+        .banking .tabs-box .tab-btn-two {
+            position: relative;
+            margin-right: 10px;
+            background: #fff;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.06);
+        }
+        .banking .tabs-box .tab-btn-two li {
+            position: relative;
+            display: block;
+            padding: 17px 20px 17px 30px;
+            border-bottom: 1px solid #e6e4e4;
+            cursor: pointer;
+        }
+        .banking .tabs-box .tab-btn-two li h4 {
+            position: relative;
+            display: block;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            color: #a8a7a7;
+        }
+        .banking .tabs-box .tab-btn-two li h4:hover {
+            color: #1e242a 
+        }
+        p {
+            position: relative;
+            font-family: "Hanken Grotesk", sans-serif;
+            color: #545151;
+            font-weight: 400;
+            margin: 0px;
+        }
+        /* @media (min-width: 992px) {
+            .col-lg-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-md-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        @media (min-width: 576px) {
+            .col-sm-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        } */
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        .banking .content-box {
+            position: relative;
+            display: block;
+        }
+        .banking .content-box .title-box {
+            position: relative;
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 0px 0px 95px;
+            margin-bottom: 29px;
+        }
+        .banking .content-box .title-box h4 {
+            position: relative;
+            display: block;
+            font-size: 20px;
+            line-height: 28px;
+            color: #a8a7a7;
+            margin-bottom: 0px;
+        }
+        .banking .content-box .title-box h2 {
+            position: relative;
+            display: block;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        .banking .content-box .inner-box {
+            position: relative;
+            display: block;
+            padding-right: 290px;
+        }
+        .banking .content-box .inner-box p {
+            margin-bottom: 30px;
+        }
+        @media (min-width: 992px) {
+            .col-lg-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+        .banking .content-box .inner-box .single-item {
+            position: relative;
+            display: block;
+            margin-bottom: 42px;
+            padding-left: 28px;
+        }
+        .banking .content-box .inner-box .single-item h2 {
+            position: relative;
+            display: block;
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 4px;
+        }.banking .content-box .inner-box .single-item p {
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+        .banking .content-box .inner-box .single-item .growth-box {
+            position: relative;
+            display: block;
+            font-size: 17px;
+            color: #1e242a;
+            text-transform: uppercase;
+        }
+        .banking .content-box .inner-box .btn-box .theme-btn {
+            background:  #550401;
+        }
+        .banking .content-box .inner-box .btn-box .theme-btn:hover{
+            background:#e22026;  
+        }
+        .theme-btn {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            font-family: "Hanken Grotesk", sans-serif;
+            color: #fff !important;
+            text-align: center;
+            padding: 16px 29px;
+            text-transform: capitalize;
+            z-index: 1;
+            text-decoration: none;
+            transition: all 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 10ms;
+        }
+        .banking .content-box .inner-box .btn-box .theme-btn:before {
+            background: #550401;
+        }
+        .theme-btn:before {
+            position: absolute;
+            content: '';
+            background:  #e22026;
+            width: 0%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+
+        }
+        .theme-btn span {
+            position: relative;
+            padding-left: 26px;
+            list-style: none;
+        }
+        .theme-btn span:before {
+            position: absolute;
+            content: "\2192";
+            left: 0px;
+            top: 1px;
+        }
+        .banking .content-box .inner-box .form-inner {
+            position: absolute;
+            top: 5px;
+            right: 0px;
+            width: 270px;
+            background: #fff;
+            padding: 25.5px 25px;
+        }
+        .banking .content-box .inner-box .form-inner:before {
+            position: absolute;
+            content: '';
+            background-image: url(assets/shapes/shape-18.png);
+            width: 100%;
+            height: 193px;
+            left: 0px;
+            bottom: 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .banking .content-box .inner-box .form-inner .form-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .banking .content-box .inner-box .form-inner .form-group .icon-box {
+            position: absolute;
+            top: 13px;
+            right: 20px;
+            z-index: 1;
+        }
+        .banking .content-box .inner-box .form-inner .form-group input[type='text'], .banking .content-box .inner-box .form-inner .form-group input[type='email'] {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 52px;
+            background: #f5f4f4;
+            border: 1px solid #f5f4f4;
+            padding: 10px 45px 10px 20px;
+            font-size: 17px;
+            color: #1e242a;
+        }
+        .banking .content-box .inner-box .form-inner .message-btn button {
+            position: relative;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 26px;
+            font-family:"Hanken Grotesk", sans-serif;
+            color: #1e242a;
+            font-weight: 700;
+            padding-left: 26px;
+        }
+        .banking .content-box .inner-box .form-inner .message-btn button i {
+            position: absolute;
+            left: 0px;
+            top: 4px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .banking .content-box .inner-box .form-inner .message-btn button:hover {
+            color: #e22026;
+        }
+        .flaticon-right-arrow:before {
+            content: "\2192";
+        }
+        .banking .content-box .inner-box .single-item:before {
+            position: absolute;
+            content: '';
+            background: #e2e0e0;
+            width: 3px;
+            height: calc(100% - 10px);
+            left: 0px;
+            top: 6px;
+        }
+        .banking .content-box .inner-box .single-item p:before {
+            position: absolute;
+            content: '';
+            background: #e2e0e0;
+            width: 70px;
+            height: 1px;
+            left: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="banking sec-pad bg-color-1">
+        <div class="pattern-layer" style="background-image: url(shape-2.png);"></div>
+        <div class="container">
+            <div class="title-box">
+                <div class="sec-title light">
+                    <span class="sub-title">
+                        Custom Banking
+                    </span>
+                    <h2>Banking For Your Needs</h2>
+                </div>
+                <div class="support-box">
+                    <h5>Get Support</h5>
+                    <div class="phone-box">
+                        <div class="icon-box">
+                            <img src="icon-26.png" >
+                        </div>
+                        <a href="#">+49 55 678 90 & 91</a>
+                            <span>9.00 am to 7.00 pm</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tabs-box">
+                <figure class="support-image"><img src="men-1.png"></figure>
+                <div class="tab-btn-one">
+                    <ul class="tab-btns tab-buttons clearfix">
+                        <li class="tab-btn " >Bussiness</li>
+                        <li class="tab-btn" >Individual</li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab " style="display:block;">
+                        <div class="tab-box-2">
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-12 col-sm-12 button-column">
+                                    <div class="tab-btn-two">
+                                        <ul class="tab-btns tab-buttons-2">
+                                            <li class="tab-btn-two" >
+                                                <h4>Saving Accounts</h4>
+                                                <p>High interest...</p>
+                                            </li>
+                                            <li class="tab-btn-two" >
+                                                <h4>Consumer Loans</h4>
+                                                <p>Low collateral...</p>
+                                            </li>
+                                            <li class="tab-btn-two" >
+                                                <h4>Credit Cards</h4>
+                                                <p>No fees...</p>
+                                            </li>
+                                            <li class="tab-btn-two" >
+                                                <h4>Advisory Services</h4>
+                                                <p>Financial advice...</p>
+                                            </li>
+                                            <li class="tab-btn-two" >
+                                                <h4>Insurance Products</h4>
+                                                <p>Fits your needs...</p>
+                                            </li>
+                                            <li class="tab-btn-two" >
+                                                <h4>Savings Account</h4>
+                                                <p>Banking Products</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                                    <div class="tab-content-2">
+                                        <div class="tab-2" id="tab-11" style="display: inline-block;">
+                                            <div class="content-box">
+                                                <div class="title-box">
+                                                    <div class="icon-box">
+                                                        <img src="icon-21.png">
+                                                    </div>
+                                                    <h4>Savings Account</h4>
+                                                    <h2>
+                                                        Invest in Your Future, 
+                                                        <br>
+                                                        Start Saving.
+                                                    </h2>
+                                                </div>
+                                                <div class="inner-box">
+                                                    <p>Every pleasure is to be welcomed and every pain avoided duty or the obligations of business our power of choice is untrammelled and when nothing prevents.</p>
+                                                    <div class="row clear-fix">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div class="single-item">
+                                                                <h2>3.2k</h2>
+                                                                <p>Live Savings Accounts</p>
+                                                                <div class="growth-box">
+                                                                    <img src="icon-22.png">
+                                                                    2.6% in lfy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 single-column">
+                                                            <div class="single-item">
+                                                                <h2>$2b</h2>
+                                                                <p>In Customer Savings</p>
+                                                                <div class="growth-box">
+                                                                    <img src="icon-22.png">
+                                                                    4.5% in lfy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a href="#" class="theme-btn">
+                                                            <span>
+                                                                Explore Options
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-inner">
+                                                        <h3>Digital Opening</h3>
+                                                        <form action="post" action="#">
+                                                            <div class="form-group">
+                                                                <div class="icon-box">
+                                                                     <img src="icon-23.png">
+                                                                </div>
+                                                                <input type="text" name="name" placeholder="Full Name" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="icon-box">
+                                                                     <img src="icon-24.png">
+                                                                </div>
+                                                                <input type="email" name="email" placeholder="Email" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="icon-box">
+                                                                     <img src="icon-25.png">
+                                                                </div>
+                                                                <input type="text" name="phone-number" placeholder="Ph num" required>
+                                                            </div>
+                                                            <div class="form-group message-btn">
+                                                                <button type="submit">
+                                                                    <i class="flaticon-right-arrow">
+                                                                    </i>
+                                                                    Proceed to Details
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-B0R8t268V6kY4D65Z9q73yF/674l7K9J388w/9k/i96e5�H7jRM" crossorigin="anonymous"></script>
+</body>
+</html>
